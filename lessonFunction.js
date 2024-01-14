@@ -81,6 +81,12 @@ function generateRandomPassword(length) {
   }
   return password;
 }
+<<<<<<< HEAD
 
 // Example usage:
 console.log(generateRandomPassword(10)); // Output: Random 8-character password
+=======
+var colors = ["red", "orange", "yellow", "green", "blue", "purple", "pink"];
+listArrayItems(colors);
+console.log("hello.github");
+>>>>>>> 660c4baf646815c91f47a4414e9e969f0601ec13
