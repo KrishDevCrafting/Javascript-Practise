@@ -13,3 +13,5 @@ while (a <= 9) {
   ++a;
   console.log(`${t}` + " * " + `${a}` + " = " + t * a);
 }
+
+console.log("hello.check!");
