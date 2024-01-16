@@ -35,7 +35,7 @@ var Car = {
   color: "black",
   Headlight: "four-Lights",
 };
+console.log(Car[example[c]]);
 
-for (let c = 0; c < example.length; c++) {
-  console.log(Car[example[c]]);
-}
+// for (let c = 0; c < example.length; c++) {
+// }

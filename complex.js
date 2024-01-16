@@ -1,6 +1,5 @@
-function name(){
-console.log("hello,function!")
-  
+function name_() {
+  console.log("hello,function!");
 }
 
-name()
+name_();
