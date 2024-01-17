@@ -54,13 +54,13 @@
 // $push.pop();
 // console.log($push);
 
-function wall(one, two, three, four) {
-  var arr = [];
-  arr.push(one);
-  arr.push(two);
-  arr.push(three);
-  arr.push(four);
-  console.log(arr);
-}
+// function wall(one, two, three, four) {
+//   var arr = [];
+//   arr.push(one);
+//   arr.push(two);
+//   arr.push(three);
+//   arr.push(four);
+//   console.log(arr);
+// }
 
-console.log("itachi", "Sasuke", "Madara", "Aizen");
+// console.log("itachi", "Sasuke", "Madara", "Aizen");

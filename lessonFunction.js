@@ -1,9 +1,9 @@
-// Function in javascript
+Function in javascript;
 
-// function value(a, b) {
-//   let sum = a + b;
-//   console.log(sum);
-// }
+function value(a, b) {
+  let sum = a + b;
+  console.log(sum);
+}
 
 // value(5, 5);
 
