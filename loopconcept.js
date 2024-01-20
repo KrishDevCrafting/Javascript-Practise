@@ -77,15 +77,19 @@
 
 // This code is contributed by shivanisinghss2110
 
-const N = 8;
+// const N = 8;
 
-console.log("Value of N: " + N);
+// console.log("Value of N: " + N);
 
-for (let i = 1; i <= N; i++) {
-  let rowOutput = "";
-  for (let j = 1; j <= N; j++) {
-    const min = i < j ? i : j;
-    rowOutput += N - min + 1;
-  }
-  console.log(rowOutput);
+// for (let i = 1; i <= N; i++) {
+//   let rowOutput = "";
+//   for (let j = 1; j <= N; j++) {
+//     const min = i < j ? i : j;
+//     rowOutput += N - min + 1;
+//   }
+//   console.log(rowOutput);
+// }
+
+for (let v = 10; v > 0; v--) {
+  console.log(v);
 }

@@ -64,3 +64,62 @@
 // }
 
 // console.log("itachi", "Sasuke", "Madara", "Aizen");
+
+// math object
+
+console.log(Math.floor(20.5));
+
+// function randompassword(length) {
+//   let charater = "abcdefghijklnopqrstuvwxyzABCDEFGHIJKLNOPQRSTUVWXYZ";
+//   let password = "";
+//   for (let i = 0; i < length; i++) {
+//     const randomI = Math.floor(Math.random() * charater.length);
+//     password += charater.charAt(randomI);
+//   }
+//   return password;
+// }
+// const num = randompassword(5);
+// // console.log(randompassword(80));
+// console.log(num);
+
+// const Arrrow = (str) => {
+//   let character = "987654321";
+//   let pass = "";
+//   for (let n = 0; n <= str; n++) {
+//     const randomI = Math.floor(Math.random() * character.length);
+//     pass += character.charAt(randomI);
+//   }
+//   return pass;
+// };
+
+// const number = Arrrow(2);
+// console.log(number);
+
+const practise = (ing) => {
+  let character = "abcdefghijklnopqrstuvwxyzABCDEFGHIJKLNOPQRSTUVWXYZ123456789";
+  let power = "";
+  for (let p = 0; p < ing; p++) {
+    const randompassword = Math.floor(Math.random() * character.length);
+    power += character.charAt(randompassword);
+  }
+
+  return power;
+};
+
+console.log(practise(6));
+
+// function darkweb(web, app) {
+//   if (web < 10) {
+//     console.log("Naruto");
+//   } else if (web <= 20) {
+//     console.log("itachi");
+//   } else if (app <= 2) {
+//     console("Madara");
+//   } else if (dama < 4) {
+//     console.log("Aizen");
+//   } else if (app <= 2) {
+//     console.log("Sasuke");
+//   }
+// }
+// darkweb(2, 2);
+console.log(2 >= 2 ? "true" : "false");

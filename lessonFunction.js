@@ -1,5 +1,3 @@
-Function in javascript;
-
 function value(a, b) {
   let sum = a + b;
   console.log(sum);
