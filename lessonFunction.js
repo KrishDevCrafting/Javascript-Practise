@@ -135,9 +135,6 @@ console.log(generateRandomPassword(20));
 
 // console.log(stringLength); // Outputs: 13
 
-var letters = ["a", "b", "c"];
-for(let i = 0; i < letters.length; i++)
-console.log(letters[i]);
-{
 
-}
+
+
