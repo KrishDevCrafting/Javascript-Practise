@@ -94,3 +94,50 @@ console.log(Largestnumberofarr([10, 20, 20, 40, 100]));
 // const num = randompassword(5);
 // // console.log(randompassword(80));
 // console.log(num);
+
+// function variable(str) {
+//   return str.split("").reverse().join("");
+// }
+// const valu = variable("krish");
+// console.log(valu);
+// const key = (props) => {
+//   return props.split("").reverse().join("");
+// };
+
+// console.log(key("Rachit"));
+
+// function generateRandomPassword(length) {
+//   let character = "abcdefghijklnopqrstuvwxyzABCDEFGHIJKLNOPQRSTUVWXYZ";
+//   let key = "";
+//   for (let i = 0; i < length; i++) {
+//     const randomI = Math.floor(Math.random() * character.length);
+//     key += character.charAt(randomI);
+//   }
+//   return key;
+// }
+
+// console.log(generateRandomPassword(5));
+
+function generateRandomPassword(length) {
+  let character = "abcdefghijklnopqrstuvwxyzABCDEFGHIJKLNOPQRSTUVWXYZ";
+  let password = "";
+  for (let i = 0; i < length; i++) {
+    const randomI = Math.floor(Math.random() * character.length);
+    password += character.charAt(randomI);
+  }
+  return password;
+}
+
+console.log(generateRandomPassword(20));
+//In JavaScript, the .length property is often used to determine the number of elements in an array or the number of characters in a string. Its usage depends on the data type
+// const myString = "Krish";
+// const stringLength = myString.length;
+
+// console.log(stringLength); // Outputs: 13
+
+var letters = ["a", "b", "c"];
+for(let i = 0; i < letters.length; i++)
+console.log(letters[i]);
+{
+
+}
