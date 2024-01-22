@@ -39,3 +39,6 @@ console.log(Car[example[1]]);
 
 // for (let c = 0; c < example.length; c++) {
 // }
+// 21/1/24 Topic Object Methods
+// objects as combinations of data and functionality.
+//an object consists of key-value pairs, known as properties.
