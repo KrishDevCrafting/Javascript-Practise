@@ -122,4 +122,27 @@ console.log(practise(6));
 //   }
 // }
 // darkweb(2, 2);
-console.log(2 >= 2 ? "true" : "false");
+
+// Object.values() Method:
+// const Women = {
+//   Name: "Vhisaka",
+//   Role: "Junior-Engineer",
+//   Speciality: "Communication",
+// };
+
+// const h = Object.values(Women);
+// console.log(h);
+
+// Purpose: It returns an array containing the values of the enumerable properties of an object.
+
+// Object.entries() Method:
+// let myObject = {
+//   name: "Rohan",
+//   Age: "22",
+//   City: "Bangalore",
+// };
+// myObject.salary = 55000;
+
+// const valuesArray = Object.entries(myObject);
+// console.log(valuesArray);
+// Purpose: It returns an array containing the key-value pairs of the enumerable properties of an object.
