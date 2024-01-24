@@ -82,15 +82,16 @@ console.log(Largestnumberofarr([10, 20, 20, 40, 100]));
 // // Example usage:
 // console.log(generateRandomPassword(10)); // Output: Random 8-character password
 
-// function randompassword(length) {
-//   let charater = "abcdefghijklnopqrstuvwxyzABCDEFGHIJKLNOPQRSTUVWXYZ";
-//   let password = "";
-//   for (let i = 0; i < length; i++) {
-//     const randomI = Math.floor(Math.random() * charater.length);
-//     password += charater.charAt(randomI);
-//   }
-//   return password;
-// }
-// const num = randompassword(5);
-// // console.log(randompassword(80));
-// console.log(num);
+function randompassword(length) {
+  let charater = "abcdefghijklnopqrstuvwxyzABCDEFGHIJKLNOPQRSTUVWXYZ";
+  let password = "";
+  for (let i = 0; i < length; i++) {
+    const randomI = Math.floor(Math.random() * charater.length);
+    password += charater.charAt(randomI);
+  }
+  return password;
+}
+const num = randompassword(5);
+// console.log(randompassword(80));
+
+console.log(num);
