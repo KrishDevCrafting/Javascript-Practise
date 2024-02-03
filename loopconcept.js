@@ -90,6 +90,16 @@
 //   console.log(rowOutput);
 // }
 
-for (let v = 10; v > 0; v--) {
-  console.log(v);
+// for (let v = 10; v > 0; v--) {
+//   console.log(v);
+// }
+
+for (var a = 0; a < 10; a++) {
+  console.log(a, "*");
 }
+
+//“When we are no longer able to change a situation, we are challenged to change ourselves.”
+//― Viktor E. Frankl, Man’s Search for Meaning
+
+
+//Done

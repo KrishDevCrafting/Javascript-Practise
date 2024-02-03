@@ -238,14 +238,14 @@ console.log("comp1==comp2 is", comp1 !== comp2);
 //   }
 // }
 
-let year = prompt("Enter a year: ");
-let LeapYear = isLeapYear(year);
+// let year = prompt("Enter a year: ");
+// let LeapYear = LeapYear(year);
 
-if (LeapYear) {
-  alert("The year " + year + " is a leap year.");
-} else {
-  alert("The year " + year + " is not a leap year.");
-}
+// if (LeapYear) {
+//   alert("The year " + year + " is a leap year.");
+// } else {
+//   alert("The year " + year + " is not a leap year.");
+// }
 
 let n = 10;
 let string = "JavaScript";
@@ -257,9 +257,6 @@ for (let i = 0; i < 200; i++) console.log(string);
 
 // Question: What is the syntax of a for-in loop in JavaScript?
 //The syntax of a for-in loop is as follows:
-for (variable in object) {
-  // Code to be executed
-}
 
 let obj = {
   Harry: 99,
@@ -269,10 +266,10 @@ let obj = {
 };
 
 for (let a in obj) {
-  console.log("Marks of " + a + "are" + obj[a]);
+  console.log("Marks of " + a + " " + "are" + obj[a]);
 }
 // for of Loop
 
-for (let y of "vaishuu") {
+for (let y of "Foolish,Krish") {
   console.log(y);
 }
