@@ -5,7 +5,7 @@
 //     var output = Purchase.shoes * Purchase.GST;
 //     console.log("Total_Price...!", output);
 //   },
-// };s
+// };
 
 // Purchase.TotalPay();
 
@@ -31,3 +31,4 @@
 //   },
 // };
 // $Object.minus();
+//Graet work 10/2/24
