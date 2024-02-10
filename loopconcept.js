@@ -94,12 +94,30 @@
 //   console.log(v);
 // }
 
-for (var a = 0; a < 10; a++) {
-  console.log(a, "*");
-}
-
 //“When we are no longer able to change a situation, we are challenged to change ourselves.”
 //― Viktor E. Frankl, Man’s Search for Meaning
 
+function generatePyramid() {
+  const totalNumberofRows = 5;
+  let output = "";
 
+  for (let i = 1; i <= totalNumberofRows; i++) {
+    for (let j = 1; j <= i; j++) {
+      output += j + " ";
+    }
+    console.log(output);
+    output = "";
+  }
+}
+
+generatePyramid();
+let num = "";
+for (a = 1; a <= 5; a++) {
+  for (b = 1; b <= a; b++) {
+    num += a + " ";
+  }
+  console.log(num);
+  num = "";
+  // num = "";
+}
 //Done
