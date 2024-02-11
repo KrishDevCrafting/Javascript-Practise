@@ -31,4 +31,29 @@
 //   },
 // };
 // $Object.minus();
-//Graet work 10/2/24
+// // Graet work 10/2/24
+
+// var car = {
+//   Engine: "7hp",
+//   Cylinder: 4,
+//   Data: function () {
+//     var Data = `${this.Engine}${this.Cylinder}`;
+//     console.log(Data);
+//   },
+// };
+
+// car.Data();
+
+let example = {
+  a: "krish",
+  b: "Love",
+  c: "BMW",
+  $concat: function () {
+    var $concat = `${this.a}${" "}${this.b}${" "}${this.c}`;
+    console.log($concat, "...!");
+  },
+};
+
+example.$concat();
+
+_Array = {};

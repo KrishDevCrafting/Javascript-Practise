@@ -6,10 +6,10 @@ var user = "hello ";
 var user2 = "Lisa";
 console.log(user.concat(user2));
 
-// var letters = ["a", "b", "c"];
-// for (let i = 0; i < letters.length; i++) console.log(letters[i]);
-// {
-// }
+var letters = ["a", "b", "c"];
+for (let i = 0; i < letters.length; i++) console.log(letters[i]);
+{
+}
 
 // var veggies = ["oninon", "persley", "carrot"];
 // console.log(`${veggies}`, veggies.length);
