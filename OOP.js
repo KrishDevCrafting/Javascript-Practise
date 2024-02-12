@@ -56,4 +56,17 @@ let example = {
 
 example.$concat();
 
-_Array = {};
+_Array = {
+  k: ["krish"],
+  u: ["Rachit"],
+  t: ["Deepak"],
+  r: ["Vaishu"],
+  Tree: function () {
+    var Tree = `${this.k}${this.r}${this.NewValue}`;
+    console.log(Tree);
+  },
+};
+_Array.NewValue = "By-Object-Method..!";
+_Array.Tree();
+_Array.u.push("Add-Value");
+console.log(_Array.u);
