@@ -27,7 +27,7 @@
 
 // const fibonacciSeries = generateFibonacciSeries(5);
 // console.log("Fibonacci Series:", fibonacciSeries);
-
+//Fibonacci Example:
 function fibonacciSeries(n) {
   if (n <= 1) {
     return n;
@@ -45,3 +45,19 @@ function Recursion(TermnNum) {
 }
 
 console.log(Recursion(10));
+
+const loginForm = document.querySelector("#login-form");
+loginForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const username = document.querySelector("#username").value;
+  const password = document.querySelector("#password").value;
+  // Validate username and password
+  if (username === "example" && password === "password") {
+    sessionStorage.setItem("isLoggedIn", true);
+    // Redirect or update UI
+  } else {
+    alert("Invalid username or password");
+  }
+});
+
+document.getElementById("Show")

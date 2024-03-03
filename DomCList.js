@@ -69,3 +69,4 @@ const test2 = () => {
   const logic = "<ul>" + array.map((a) => `<li>${a}</li>`).join("") + "</ul>";
   cool.innerHTML = logic;
 };
+

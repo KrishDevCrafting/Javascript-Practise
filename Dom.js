@@ -1,6 +1,6 @@
 function change() {
-  // document.getElementsByTagName("h2") returns a NodeList of the <h2>
-  // elements in the document, and the first is number 0:
+  //document.getElementsByTagName("h2") returns a NodeList of the <h2>
+// elements in the document, and the first is number 0:
   const header = document.getElementsByTagName("h2").item(0);
 
   // The firstChild of the header is a Text node:

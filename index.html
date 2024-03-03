@@ -9,30 +9,25 @@
 
 <body>
 
+
+    <div>
+
+        <div id="Show"></div>
+        <form>
+            <Label>Name</Label>
+            <input type="text">
+            <Label>Email</Label>
+            <input type="email">
+        </form>
+    </div>
     <!-- Your list element -->
     <ul id="myListwork"></ul>
 
     <script>
-        // Sample array
-        var myArray = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
-
-        // Get the reference to the list element
-        var myList = document.getElementById("myListwork");
-
-        // Loop through the array and append items as list items
-        for (var i = 0; i < myArray.length; i++) {
-            // Create a new list item
-            var listItem = document.createElement("li");
-
-            // Set the text content of the list item to the current array element
-            listItem.textContent = myArray[i];
-
-            // Append the list item to the list
-            myList.appendChild(listItem);
-        }
+        const element = document.querySelector('#login-form');
     </script>
 
 </body>
-<script src="./PractiseDom.js"></script>
+<script src="./Logic1.js"></script>
 
 </html>

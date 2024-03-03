@@ -247,10 +247,6 @@ console.log("comp1==comp2 is", comp1 !== comp2);
 //   alert("The year " + year + " is not a leap year.");
 // }
 
-let n = 10;
-let string = "JavaScript";
-for (let i = 0; i < 200; i++) console.log(string);
-
 //Topic for in loop
 //  Question: What is the purpose of a for-in loop?
 //Answer: A for-in loop is used to iterate over the properties of an object. It allows you to access each property name (key) one by one
@@ -260,8 +256,8 @@ for (let i = 0; i < 200; i++) console.log(string);
 
 let obj = {
   Harry: 99,
-  Deepak: 98,
-  Rachit: 88,
+  Deo: 98,
+  Rohan: 88,
   Krish: 99.9,
 };
 
@@ -273,3 +269,6 @@ for (let a in obj) {
 for (let y of "Foolish,Krish") {
   console.log(y);
 }
+
+const $var = "Hello,World..!";
+console.log($var);
