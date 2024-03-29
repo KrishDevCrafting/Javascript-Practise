@@ -1,13 +1,13 @@
-// var Purchase = {
-//   shoes: 50,
-//   GST: 1.2,
-//   TotalPay: function () {
-//     var output = Purchase.shoes * Purchase.GST;
-//     console.log("Total_Price...!", output);
-//   },
-// };
+var Purchase = {
+  shoes: 50,
+  GST: 1.2,
+  TotalPay: function () {
+    var output = Purchase.shoes * Purchase.GST;
+    console.log("Total_Price...!", output);
+  },
+};
 
-// Purchase.TotalPay();
+Purchase.TotalPay();
 
 // let Purchase2 = {
 //   Watch: 1000,
@@ -70,3 +70,18 @@ _Array.NewValue = "By-Object-Method..!";
 _Array.Tree();
 _Array.u.push("Add-Value");
 console.log(_Array.u);
+
+//OOP helps developers to mimic the relationship between objects in the real world. In a way, it helps you to reason about relationships between things in your software, just like you would in the real world. Thus, OOP is an effective approach to come up with solutions in the code you write. OOP also:
+
+// Allows you to write modular code,
+
+// Makes your code more flexible and
+
+//The thing to remember about Objects is that they exist in a hierarchal structure. Meaning that the original base or super class for everything is the Object class, all objects derive from this class. This allows us to utilize the Object.create() method. to create or instansiate objects of our classes.
+
+// Makes your code reusable.
+
+class Car {}
+
+var Bugati = Object.create(Car);
+console.log(Car);

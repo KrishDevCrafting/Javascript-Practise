@@ -43,35 +43,35 @@
 // }
 // metal questions in loop
 
-// for (let i = 1; i < 10; i++) {
-//   if (i == 1) {
-//     console.log("Gold Medal");
-//   } else if (i == 2) {
-//     console.log("Silver Madel");
-//   } else if (i == 3) {
-//     console.log("Bronze Madel");
-//   } else {
-//     console.log(i);
-//   }
-// }
+for (let i = 1; i < 10; i++) {
+  if (i == 1) {
+    console.log("Gold Medal");
+  } else if (i == 2) {
+    console.log("Silver Madel");
+  } else if (i == 3) {
+    console.log("Bronze Madel");
+  } else {
+    console.log(i);
+  }
+}
 
-// for in switch statement same example
-// for (var i = 1; i <= 10; i++) {
-//   switch (true) {
-//     case i == 1:
-//       console.log("Gold Medal");
-//       break;
-//     case i == 2:
-//       console.log("sliver Medal");
-//       break;
-//     case i == 3:
-//       console.log("Bronze Medal");
-//       break;
-//     default:
-//       console.log(i);
-//       break;
-//   }
-// }
+//for in switch statement example:
+for (var i = 3; i <= 10; i++) {
+  switch (true) {
+    case i == 1:
+      console.log("Gold Medal");
+      break;
+    case i == 2:
+      console.log("sliver Medal");
+      break;
+    case i == 3:
+      console.log("Bronze Medal");
+      break;
+    default:
+      console.log(i);
+      break;
+  }
+}
 
 // Driver code
 

@@ -1,6 +1,5 @@
 function Add() {
-  const num = 1;
-  const value = (document.getElementById("btn-add").textContent =
-    "this is the value" + num);
-  return value;
+  return document.getElementById("btn-add")
 }
+const int = 0;
+document.getElementById("dynamicNumber").textContent = int;
