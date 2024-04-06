@@ -266,7 +266,7 @@ for (let a in obj) {
 }
 // for of Loop
 
-for (let y of "Foolish,Krish") {
+for (let y of "Genius,Krish") {
   console.log(y);
 }
 
