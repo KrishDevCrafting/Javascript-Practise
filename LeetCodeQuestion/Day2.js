@@ -8,6 +8,6 @@ var createCounter = function (n) {
 };
 
 const num = createCounter(10);
-console.log(num);
-console.log(num);
-console.log(num);
+console.log(num());
+console.log(num());
+console.log(num());
