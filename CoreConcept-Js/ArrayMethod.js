@@ -30,30 +30,44 @@
 //Unshit add the value in array in the (First value of the array...!)
 
 // Map === is just nothing a transformation of array means (double,triple,binary the array value)
-function double(x) {
-  return x * 2;
-}
-const Triple = (x) => {
-  return x * 3;
-};
-const k = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function double(x) {
+//   return x * 2;
+// }
+// const Triple = (x) => {
+//   return x * 3;
+// };
+// const k = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const output = k.map(double);
-const outputTriple = k.map(Triple);
+// const output = k.map(double);
+// const outputTriple = k.map(Triple);
 
-console.log(output, outputTriple);
+// console.log(output, outputTriple);
 
-function binary(y) {
-  return y.toString(2);
-}
-const f = [2, 3, 4, 5, 6];
-const value = f.map(binary);
-console.log(value, `${binary}`);
+// function binary(y) {
+//   return y.toString(2);
+// }
+// const f = [2, 3, 4, 5, 6];
+// const value = f.map(binary);
+// console.log(value, `${binary}`);
 
 /////// (FLITERN-METHOD)
 // It creates a new array containing only those elements from the original array that meet the condition specified in the callback function. This helps in extracting or selecting elements that satisfy certain criteria, effectively "filtering" out unwanted elements.
 
-let key = [22, 33, 44, 55];
-let lock = key.map((num) => num * 2);
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 
-console.log(lock);
+// // Filter even numbers
+// const evenNumbers = numbers.filter((num) => num % 2 === 0);
+
+// console.log(evenNumbers); // Output: [2, 4]
+
+// Find the Positive number and negative number using Filter...!
+
+// const Assign = [
+//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -1, -1, -3, -4, -5, -6, -7, -8, -9, -10,
+// ];
+
+// const checkNumber = Assign.filter((logic) => logic < 0);
+// console.log("Negative-Numbers", checkNumber);
+
+// const positiveNumber = Assign.filter((p) => p < 10 && p > 0);
+// console.log("Positive-Number", positiveNumber);
