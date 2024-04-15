@@ -43,12 +43,17 @@ const outputTriple = k.map(Triple);
 
 console.log(output, outputTriple);
 
-// function binary(y) {
-//   return y.toString(2);
-// }
-// const f = [2, 3, 4, 5, 6];
-// const value = f.map(binary);
-// console.log(value, `${binary}`);
+function binary(y) {
+  return y.toString(2);
+}
+const f = [2, 3, 4, 5, 6];
+const value = f.map(binary);
+console.log(value, `${binary}`);
 
 /////// (FLITERN-METHOD)
 // It creates a new array containing only those elements from the original array that meet the condition specified in the callback function. This helps in extracting or selecting elements that satisfy certain criteria, effectively "filtering" out unwanted elements.
+
+let key = [22, 33, 44, 55];
+let lock = key.map((num) => num * 2);
+
+console.log(lock);
