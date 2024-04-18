@@ -7,3 +7,19 @@
 // If the length of the array is 0, the function should return init.
 
 // Please solve it without using the built-in Array.reduce method.
+
+/**
+ * @param {number[]} nums
+ * @param {Function} fn
+ * @param {number} init
+ * @return {number}
+ */
+var reduce = function (nums, fn, init) {};
+
+let num = [1, 2, 3, 4, 5];
+
+function fn(init) {
+  return init + 3;
+}
+
+console.log(num.reduce(fn, 0));

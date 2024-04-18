@@ -25,3 +25,4 @@ var filter = function (arr, fn) {
 
 const TopGun = filter([10,20,30]);
 console.log(TopGun());
+ 
