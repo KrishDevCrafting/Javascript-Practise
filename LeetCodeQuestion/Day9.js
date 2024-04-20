@@ -9,12 +9,16 @@
 // You may assume each function in the array accepts one integer as input and returns one integer as output.
 
 /**
- * @param {Function[]} functions
+ * @param {Function[x => x + 1, x => x * x, x => 2 * x]} functions
  * @return {Function}
  */
-var compose = function(functions) {
-    
-    return function(x) {
-        
+var compose = function (functions) {
+  return function (x) {
+    for (const fn of functions.reverse()) {
+      x = fn(x);
     }
+    return x;
+  };
 };
+const a = compose([(x) => x + 1, (x) => x * x, (x) => 2 * x]);
+console.log(a(4));
