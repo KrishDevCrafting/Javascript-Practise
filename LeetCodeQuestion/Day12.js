@@ -15,14 +15,19 @@
  * @return {Function}
  */
 function memoize(fn) {
+  const c = {};
   return function (...args) {
-
-
-
-
-    
+    const key = JSON.stringify(args);
+    if (key in c) {
+      return c[key];
+    }
+    c[key] = fn(...args);
+    return c[key];
   };
 }
+
+const ab = memoize(1, 2, 4);
+console.log(ab());
 /**
  * let callCount = 0;
  * const memoizedFn = memoize(function (a, b) {
