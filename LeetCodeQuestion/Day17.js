@@ -6,20 +6,20 @@
 // setTimeout(cancelFn, cancelTimeMs)
 // The function fn should be called with args immediately and then called again every t milliseconds until cancelFn is called at cancelTimeMs ms
 
-
-
-
-
-
-
 /**
  * @param {Function} fn
  * @param {Array} args
  * @param {number} t
  * @return {Function}
  */
-var cancellable = function(fn, args, t) {
-    
+var cancellable = function (fn, args, t) {
+  fn(...args);
+  let a = setInterval(() => {
+    fn(...args);
+  }, t);
+
+  let b = () => clearInterval(a);
+  return b;
 };
 
 /**
@@ -34,11 +34,11 @@ var cancellable = function(fn, args, t) {
  *      const diff = Math.floor(performance.now() - start);
  *      result.push({"time": diff, "returned": fn(...argsArr)});
  *  }
- *       
+ *
  *  const cancel = cancellable(log, args, t);
  *
  *  setTimeout(cancel, cancelTimeMs);
- *   
+ *
  *  setTimeout(() => {
  *      console.log(result); // [
  *                           //     {"time":0,"returned":8},
@@ -48,5 +48,5 @@ var cancellable = function(fn, args, t) {
  *                           //     {"time":140,"returned":8},
  *                           //     {"time":175,"returned":8}
  *                           // ]
- *  }, cancelTimeMs + t + 15)    
+ *  }, cancelTimeMs + t + 15)
  */
