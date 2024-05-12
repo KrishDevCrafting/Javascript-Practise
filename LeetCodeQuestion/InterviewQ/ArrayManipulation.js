@@ -46,14 +46,31 @@ console.log(nestedArray);
 
 //Q3 // How do you reverse an array without using the built-in reverse method?
 
-const arrayToReverse = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const arrayToReverse = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const reversedArray = arrayToReverse.reduceRight(
-  (accumulator, currentValue) => {
-    accumulator.push(currentValue);
-    return accumulator;
-  },
-  []
-);
+// const reversedArray = arrayToReverse.reduceRight(
+//   (accumulator, currentValue) => {
+//     accumulator.push(currentValue);
+//     return accumulator;
+//   },
+//   []
+// );
+
+// console.log(reversedArray);
+
+const arrayToReverse = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const reversedArray = [];
+
+for (let i = arrayToReverse.length - 1; i >= 0; i--) {
+  reversedArray.push(arrayToReverse[i]);
+}
 
 console.log(reversedArray);
+
+const Method2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const empty = [];
+for (let a = Method2.length - 2; a >= 0; a--) {
+  empty.push(Method2[a]);
+}
+
+console.log(empty);
