@@ -1,4 +1,4 @@
-JavaScript Practice Repository
+<h1 style={"color: red"}>JavaScript Practice Repository</h1>
 Welcome to my JavaScript practice repository! Here, I explore various JavaScript questions, concepts, and coding challenges to enhance my skills and understanding of the language.
 
 What's Inside?
