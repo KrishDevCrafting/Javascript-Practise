@@ -1,9 +1,9 @@
-<h1 style="color: red">JavaScript Practice Repository</h1>
+<h1 style="color: blue;">JavaScript Practice Repository</h1>
 Welcome to my JavaScript practice repository! Here, I explore various JavaScript questions, concepts, and coding challenges to enhance my skills and understanding of the language.
 
 What's Inside?
 
-📚 A collection of JavaScript questions covering topics such as arrays, strings, objects, functions, and more.
+📚 A collection of JavaScript questions covering arrays, strings, objects, functions, and more.
 💻 Code solutions and explanations for each question to help reinforce learning and understanding.
 🌟 Challenges to test your knowledge and problem-solving abilities.
 Why Practice JavaScript Here?
