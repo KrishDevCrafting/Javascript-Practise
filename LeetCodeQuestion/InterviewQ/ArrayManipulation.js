@@ -46,24 +46,15 @@ console.log(nestedArray);
 
 //Q3 // How do you reverse an array without using the built-in reverse method?
 
-// const arrayToReverse = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-// const reversedArray = arrayToReverse.reduceRight(
-//   (accumulator, currentValue) => {
-//     accumulator.push(currentValue);
-//     return accumulator;
-//   },
-//   []
-// );
-
-// console.log(reversedArray);
-
 const arrayToReverse = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const reversedArray = [];
 
-for (let i = arrayToReverse.length - 1; i >= 0; i--) {
-  reversedArray.push(arrayToReverse[i]);
-}
+const reversedArray = arrayToReverse.reduceRight(
+  (accumulator, currentValue) => {
+    accumulator.push(currentValue);
+    return accumulator;
+  },
+  []
+);
 
 console.log(reversedArray);
 
@@ -75,10 +66,23 @@ for (let a = Method2.length - 1; a >= 0; a--) {
 
 console.log(empty);
 
-const master = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
-const etySpace = [];
-for (let fn = master.length - 1; fn > 0; fn--) {
-  etySpace.push(master[fn]);
+let microWave = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var NewMicroWave = [];
+
+for (let op = microWave.length - 1; op >= 0; op--) {
+  NewMicroWave.push(microWave[op]);
 }
 
-console.log(etySpace);
+console.log(NewMicroWave, "REVERSE-VALUE..!");
+
+//Write a function to capitalize the first letter of each word in a sentence.
+
+let Word = "krish";
+let Capitaliz = Word.toUpperCase();
+console.log(Capitaliz);
+
+const manipulate = "hello";
+
+const newManipulate = manipulate.indexOf("h");
+console.log(newManipulate);
