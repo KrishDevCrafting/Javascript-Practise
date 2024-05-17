@@ -84,5 +84,7 @@ console.log(Capitaliz);
 
 const manipulate = "hello";
 
-const newManipulate = manipulate.indexOf("h");
+const newManipulate = manipulate.indexOf("h"); 
 console.log(newManipulate);
+
+

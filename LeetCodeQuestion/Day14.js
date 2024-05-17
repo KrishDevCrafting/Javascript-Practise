@@ -26,3 +26,20 @@ var addTwoPromises = async function (promise1, promise2) {
 
 // Promises1();
 // Promises2();
+
+var ecstasy = function () {
+  setTimeout(() => {
+    console.log("i just wanna be you're sweetheart");
+  }, 10000);
+  setTimeout(() => {
+    console.log("fucking come here, give me your heart");
+  }, 15000);
+  setTimeout(() => {
+    console.log("just you and me to infinity");
+  }, 20000);
+  setTimeout(() => {
+    console.log("i can't fucking breath, too much ecstasy");
+  }, 24000.5);
+};
+
+ecstasy();
