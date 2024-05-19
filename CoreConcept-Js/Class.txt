@@ -1,0 +1,8 @@
+What is a Class in JavaScript?
+In JavaScript, a class is a blueprint for creating objects with pre-defined properties and methods. It is a way to define object templates and encapsulate data and behaviors. Classes provide a more structured way of writing object-oriented code and make it easier to create and manage complex data structures.
+
+Why Create a Class?
+Encapsulation: Classes allow you to bundle data (properties) and methods (functions) that operate on the data into a single unit. This helps to organize and manage code better.
+Reusability: You can create multiple instances of a class, each with its own data. This promotes code reuse and reduces redundancy.
+Inheritance: Classes support inheritance, allowing you to create new classes based on existing ones. This helps to build hierarchies and share behaviors between different classes.
+Abstraction: Classes help to abstract the complexity by providing a clear structure and hiding implementation details. This makes the code easier to understand and maintain.
