@@ -8,4 +8,4 @@ function fn() {
 // const ab = fn();
 
 // console.log(ab());
-console.log(fn());
+console.log(fn())
