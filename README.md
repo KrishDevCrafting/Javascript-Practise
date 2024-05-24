@@ -4,7 +4,7 @@ Welcome to my JavaScript practice repository! Here, I explore various JavaScript
 What's Inside?
 
 📚 A collection of JavaScript questions covering arrays, strings, objects, functions, and more.
-💻 Code solutions and explanations for each question to help reinforce learning and understanding.
+💻 Code solutions and explanations for each question to help reinforce learning and understanding
 🌟 Challenges to test your knowledge and problem-solving abilities.
 Why Practice JavaScript Here..?
 
