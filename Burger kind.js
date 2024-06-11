@@ -1,1 +1,1 @@
-for streak 
+console.log("hello,Burger..!");
