@@ -9,7 +9,7 @@ const myPromise = new Promise((resolve, reject) => {
       reject(new Error("Random number is too low")); // Reject with an error
     }
   }, 1000); // Simulating a delay of 1 second
-});
+});srthrturtu
 
 // Consuming the promise
 myPromise
