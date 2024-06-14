@@ -1,0 +1,1 @@
+note hello this is the promises file where we futher study the promises in javascript.

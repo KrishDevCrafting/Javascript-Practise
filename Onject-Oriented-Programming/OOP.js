@@ -9,14 +9,25 @@ var Purchase = {
 
 Purchase.TotalPay();
 
-function Calculate() {
-  let shoes = 899;
-  let GST = 1.5;
-  let sum = shoes * GST;
-  return sum;
-}
 
-console.log("Total Price==>",Calculate());
+
+
+
+
+
+
+
+
+
+
+// function Calculate() {
+//   let shoes = 899;
+//   let GST = 1.5;
+//   let sum = shoes * GST;
+//   return sum;
+// }
+
+// console.log("Total Price==>",Calculate());
 
 // let Purchase2 = {
 //   Watch: 1000,
