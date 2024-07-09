@@ -43,3 +43,6 @@ class Car {
 
 const outPut = new Car(2, 2);
 outPut.call();
+
+
+// Usage: typeWriter('Hello, World!', 'myElement', 100);
