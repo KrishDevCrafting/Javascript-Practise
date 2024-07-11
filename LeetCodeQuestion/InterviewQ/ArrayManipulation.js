@@ -82,9 +82,11 @@ let Word = "krish";
 let Capitaliz = Word.toUpperCase();
 console.log(Capitaliz);
 
+
+// To find the index of in javascript
 const manipulate = "hello";
 
 const newManipulate = manipulate.indexOf("h"); 
-console.log(newManipulate);
+console.log("value",newManipulate);
 
 
