@@ -9,17 +9,6 @@ var Purchase = {
 
 Purchase.TotalPay();
 
-
-
-
-
-
-
-
-
-
-
-
 // function Calculate() {
 //   let shoes = 899;
 //   let GST = 1.5;
@@ -76,6 +65,19 @@ let example = {
 
 example.$concat();
 
+let oop = {
+  object: "object",
+  orientation: "orientation",
+  programming: "programming",
+  var$: function () {
+    let var$ = `${this.object}${" "}${this.orientation}${" "}${
+      this.programming
+    }`;
+    console.log(var$, "...!");
+  },
+};
+
+oop.var$();
 _Array = {
   k: ["krish"],
   u: ["Rachit"],
