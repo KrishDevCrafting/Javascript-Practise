@@ -6,3 +6,8 @@ const username = "Krish";
 const address = "new,delhi..!";
 
 console.log(username, address);
+
+// Callstack
+
+
+
