@@ -75,4 +75,12 @@ var people = {
 
 console.log("car" in people);
 //find type of which is the string:
-console.log(typeof(people.car));
+console.log(typeof people.car);
+// Summary
+
+// Objects are associative arrays with several special features.
+
+// They store properties (key-value pairs), where:
+
+// Property keys must be strings or symbols (usually strings).
+// Values can be of any type.
