@@ -13,6 +13,7 @@ let lassi = {
   Protein: "1.9g",
   Totalfat: "1.8g",
   Saturatedfat: "1.3g",
+
   addedSuger: "11g",
 };
 
@@ -27,60 +28,3 @@ console.log(access);
 for (var key in lassi) {
   console.log(key);
 }
-
-// // “this” in methods
-// It’s common that an object method needs to access the information stored in the object to do its job.
-
-// For instance, the code inside user.sayHi() may need the name of the user.
-
-// To access the object, a method can use the this keyword.
-
-// The value of this is the object “before dot”, the one used to call the method.
-
-// For instance:
-
-// let user = {
-//   name: "jeo",
-//   age: "18",
-//   sayhi() {
-//     console.log(this.age);
-//   },
-// };
-
-// user.sayhi();
-//use fo this
-// this is a special keyword that refers to the context in which the current code is executing.
-const obj = {
-  value: 42,
-  method: function () {
-    console.log(this.value); // obj.value
-
-    function innerFunction() {
-      console.log(this.value); // undefined in strict mode, global object in non-strict mode
-    }
-    innerFunction();
-
-    const arrowFunction = () => {
-      console.log(this.value); // obj.value (lexically inherited)
-    };
-    arrowFunction();
-  },
-};
-
-obj.method();
-// when you want true or false value..!
-var people = {
-  car: "bmw",
-};
-
-console.log("car" in people);
-//find type of which is the string:
-console.log(typeof people.car);
-// Summary
-
-// Objects are associative arrays with several special features.
-
-// They store properties (key-value pairs), where:
-
-// Property keys must be strings or symbols (usually strings).
-// Values can be of any type.
