@@ -1,1 +1,0 @@
-// map, filter,apply,bind! reduce ,map 
