@@ -3,3 +3,4 @@ function $var() {
 }
 
 alert(location.href);
+document.body.DOCUMENT_NODE;

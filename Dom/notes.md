@@ -24,3 +24,8 @@ There’s a “root” object called window. It has two roles:
 
 First, it is a global object for JavaScript code, as described in the chapter Global object.
 Second, it represents the “browser window” and provides methods to control it.
+
+DOM node classes
+The root of the hierarchy is EventTarget, that is inherited by Node, and other DOM nodes inherit from it.
+
+Here’s the picture, explanations to follow:
