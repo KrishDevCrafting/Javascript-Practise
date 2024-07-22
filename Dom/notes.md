@@ -10,10 +10,9 @@ The navigator object provides background information about the browser and the o
 
 common properties Use in navigator e.g navigator.userAgent about the current browser, and navigator.platform – about the platform (can help to differentiate between Windows/Linux/Mac etc).
 
-
 alert(location.href); // shows current URL
 if (confirm("Go to Wikipedia?")) {
-  location.href = "https://wikipedia.org"; // redirect the browser to another URL
+location.href = "https://wikipedia.org"; // redirect the browser to another URL
 }
 The functions alert/confirm/prompt are also a part of the BOM: they are not directly related to the document, but represent pure browser methods for communicating with the user.
 
@@ -28,4 +27,18 @@ Second, it represents the “browser window” and provides methods to control i
 DOM node classes
 The root of the hierarchy is EventTarget, that is inherited by Node, and other DOM nodes inherit from it.
 
-Here’s the picture, explanations to follow:
+innerHTML: the contents
+The innerHTML property allows to get the HTML inside the element as a string.
+
+In other words, innerHTML+= does this:
+
+The old contents is removed.
+The new innerHTML is written instead (a concatenation of the old and the new one)
+
+Beware: unlike innerHTML, writing to outerHTML does not change the element. Instead, it replaces it in the DOM.4
+
+The querySelector() method returns the first element that matches a CSS selector.
+
+To return all matches (not only the first), use the querySelectorAll() instead.
+
+Both querySelector() and querySelectorAll() throw a SYNTAX_ERR exception if the selector(s) is invalid.
