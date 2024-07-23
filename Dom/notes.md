@@ -47,4 +47,16 @@ Both querySelector() and querySelectorAll() throw a SYNTAX_ERR exception if the 
 textContent: pure text
 The textContent provides access to the text inside the element: only text, minus all <tags>.
 
-For instance:
+The “hidden” property
+The “hidden” attribute and the DOM property specifies whether the element is visible or not.
+
+We can use it in HTML or assign it using JavaScript, like this:
+<div>Both divs below are hidden</div>
+
+<div hidden>With the attribute "hidden"</div>
+
+<div id="elem">JavaScript assigned the property "hidden"</div>
+
+<script>
+  elem.hidden = true;
+</script>

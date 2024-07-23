@@ -11,3 +11,8 @@ function $var() {
 // document.body.DOCUMENT_NODE;
 
 // alert(elem.outerHTML);
+
+alert(news.textContent);
+setInterval(()=>
+elem.hidden = !elem.hidden, 1000
+)
