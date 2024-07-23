@@ -44,6 +44,7 @@ To return all matches (not only the first), use the querySelectorAll() instead.
 Both querySelector() and querySelectorAll() throw a SYNTAX_ERR exception if the selector(s) is invalid.
 
 <!-- 23 july 2024 -->
+
 textContent: pure text
 The textContent provides access to the text inside the element: only text, minus all <tags>.
 
@@ -51,6 +52,7 @@ The “hidden” property
 The “hidden” attribute and the DOM property specifies whether the element is visible or not.
 
 We can use it in HTML or assign it using JavaScript, like this:
+
 <div>Both divs below are hidden</div>
 
 <div hidden>With the attribute "hidden"</div>
@@ -60,3 +62,6 @@ We can use it in HTML or assign it using JavaScript, like this:
 <script>
   elem.hidden = true;
 </script>
+
+Summary
+Each DOM node belongs to a certain class. The classes form a hierarchy. The full set of properties and methods come as the result of inheritance.
