@@ -42,3 +42,9 @@ The querySelector() method returns the first element that matches a CSS selector
 To return all matches (not only the first), use the querySelectorAll() instead.
 
 Both querySelector() and querySelectorAll() throw a SYNTAX_ERR exception if the selector(s) is invalid.
+
+<!-- 23 july 2024 -->
+textContent: pure text
+The textContent provides access to the text inside the element: only text, minus all <tags>.
+
+For instance:
