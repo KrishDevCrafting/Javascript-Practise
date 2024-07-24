@@ -89,3 +89,9 @@ Tables always have <tbody>
 An interesting “special case” is tables. By DOM specification they must have <tbody> tag, but HTML text may omit it. Then the browser creates <tbody> in the DOM automatically.
 
 For the HTML:
+There are 12 node types. In practice we usually work with 4 of them:
+
+document – the “entry point” into DOM.
+element nodes – HTML-tags, the tree building blocks.
+text nodes – contain text.
+comments – sometimes we can put information there, it won’t be shown, but JS can read it from the DOM.
