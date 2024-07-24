@@ -81,6 +81,11 @@ setTimeout(() => document.body.style.background = '', 3000); // return back
 The text inside elements forms text nodes, labelled as #text. A text node contains only a string. It may not have children and is always a leaf of the tree. !important
 There are only two top-level exclusions:
 
-Spaces and newlines before <head> are ignored for historical reasons.
-If we put something after </body>, then that is automatically moved inside the body, at the end, as the HTML spec requires that all content must be inside <body>. So there can’t be any spaces after </body>.
+1.Spaces and newlines before <head> are ignored for historical reasons.
+2.If we put something after </body>, then that is automatically moved inside the body, at the end, as the HTML spec requires that all content must be inside <body>. So there can’t be any spaces after </body>.
 
+Tables always have <tbody>
+
+An interesting “special case” is tables. By DOM specification they must have <tbody> tag, but HTML text may omit it. Then the browser creates <tbody> in the DOM automatically.
+
+For the HTML:
