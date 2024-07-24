@@ -12,7 +12,7 @@ function $var() {
 
 // alert(elem.outerHTML);
 
-alert(news.textContent);
+// alert(news.textContent);
 setInterval(()=>
-elem.hidden = !elem.hidden, 1000
+elem.hidden = elem.hidden === false, 2000
 )

@@ -65,3 +65,22 @@ We can use it in HTML or assign it using JavaScript, like this:
 
 Summary
 Each DOM node belongs to a certain class. The classes form a hierarchy. The full set of properties and methods come as the result of inheritance.
+
+<!--DOM tree-->
+
+According to the Document Object Model (DOM), every HTML tag is an object. Nested tags are “children” of the enclosing one. The text inside a tag is an object as well.
+
+All these objects are accessible using JavaScript, and we can use them to modify the page.
+
+<script>
+document.body.style.background = 'red'; // make the background red
+
+setTimeout(() => document.body.style.background = '', 3000); // return back
+</script>
+
+The text inside elements forms text nodes, labelled as #text. A text node contains only a string. It may not have children and is always a leaf of the tree. !important
+There are only two top-level exclusions:
+
+Spaces and newlines before <head> are ignored for historical reasons.
+If we put something after </body>, then that is automatically moved inside the body, at the end, as the HTML spec requires that all content must be inside <body>. So there can’t be any spaces after </body>.
+
