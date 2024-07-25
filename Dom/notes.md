@@ -67,6 +67,7 @@ Summary
 Each DOM node belongs to a certain class. The classes form a hierarchy. The full set of properties and methods come as the result of inheritance.
 
 <!--DOM tree-->
+<!-- 24/6/2024 -->
 
 According to the Document Object Model (DOM), every HTML tag is an object. Nested tags are “children” of the enclosing one. The text inside a tag is an object as well.
 
@@ -95,3 +96,11 @@ document – the “entry point” into DOM.
 element nodes – HTML-tags, the tree building blocks.
 text nodes – contain text.
 comments – sometimes we can put information there, it won’t be shown, but JS can read it from the DOM.
+
+ <!-- 25/6/24 -->
+ Walking the DOM
+The DOM allows us to do anything with elements and their contents, but first we need to reach the corresponding DOM object.
+
+All operations on the DOM start with the document object. That’s the main “entry point” to DOM. From it we can access any node.
+
+Here’s a picture of links that allow for travel between DOM nodes:
