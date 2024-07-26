@@ -13,6 +13,8 @@ function $var() {
 // alert(elem.outerHTML);
 
 // alert(news.textContent);
-setInterval(()=>
-elem.hidden = elem.hidden === false, 2000
-)
+setInterval(() => (elem.hidden = elem.hidden === false), 2000);
+
+for (let node of document.body.childNodes) {
+  console.log(node); // shows all nodes from the collection
+}

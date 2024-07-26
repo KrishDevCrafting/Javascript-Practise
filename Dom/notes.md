@@ -97,10 +97,39 @@ element nodes – HTML-tags, the tree building blocks.
 text nodes – contain text.
 comments – sometimes we can put information there, it won’t be shown, but JS can read it from the DOM.
 
- <!-- 25/6/24 -->
- Walking the DOM
+ <!-- 25/7/24 -->
+
+Walking the DOM
 The DOM allows us to do anything with elements and their contents, but first we need to reach the corresponding DOM object.
 
 All operations on the DOM start with the document object. That’s the main “entry point” to DOM. From it we can access any node.
 
 Here’s a picture of links that allow for travel between DOM nodes:
+
+<!-- 26/7/24 -->
+
+<!-- On top: documentElement and body -->
+
+The topmost tree nodes are available directly as document properties:
+
+<html> = document.documentElement
+The topmost document node is document.documentElement. That’s the DOM node of the <html> tag.
+<body> = document.body
+Another widely used DOM node is the <body> element – document.body.
+<head> = document.head
+The <head> tag is available as document.head.
+
+In the DOM world null means “doesn’t exist”
+In the DOM, the null value means “doesn’t exist” or “no such node”.
+
+Children: childNodes, firstChild, lastChild
+
+There are two terms that we’ll use from now on:
+
+Child nodes (or children) – elements that are direct children. In other words, they are nested exactly in the given one. For instance, <head> and <body> are children of <html> element.
+Descendants – all elements that are nested in the given one, including children, their children and so on.
+DOM collections
+As we can see, childNodes looks like an array. But actually it’s not an array, but rather a collection – a special array-like iterable object.
+
+There are two important consequences:
+
