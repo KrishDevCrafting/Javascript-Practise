@@ -16,5 +16,5 @@ function $var() {
 setInterval(() => (elem.hidden = elem.hidden === false), 2000);
 
 for (let node of document.body.childNodes) {
-  console.log(node); // shows all nodes from the collection
+  console.log(node,"here"); // shows all nodes from the collection
 }
