@@ -133,3 +133,16 @@ As we can see, childNodes looks like an array. But actually it’s not an array,
 
 There are two important consequences:
 
+1. We can use for..of to iterate over it:
+   <script>
+   for (let node of document.body.childNodes) {
+     alert(node); // shows all nodes from the collection
+   }
+   </script>
+   2.That’s because it’s iterable (provides the Symbol.iterator property, as required).
+
+Array methods won’t work, because it’s not an array:
+
+<script>
+alert(document.body.childNodes.filter); // undefined (there's no filter method)
+</script>
