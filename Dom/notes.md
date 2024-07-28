@@ -344,3 +344,28 @@ document.getElementsByName(name) returns elements with the given name attribute,
     alert( input.value + ': ' + input.checked );
   }
 </script>
+
+Live collections
+All methods "getElementsBy*" return a live collection. Such collections always reflect the current state of the document and “auto-update” when it changes.
+
+In the example below, there are two scripts.
+
+The first one creates a reference to the collection of <div>. As of now, its length is 1.
+The second scripts runs after the browser meets one more <div>, so its length is 2.
+
+<div>First div</div>
+
+<script>
+  let divs = document.getElementsByTagName('div');
+  alert(divs.length); // 1
+</script>
+
+<div>Second div</div>
+
+<script>
+  alert(divs.length); // 2
+</script>
+
+In contrast, querySelectorAll returns a static collection. It’s like a fixed array of elements.
+
+If we use it instead, then both scripts output 1:
