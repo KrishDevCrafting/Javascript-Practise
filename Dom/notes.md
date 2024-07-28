@@ -239,3 +239,108 @@ querySelectorAll:
 By far, the most versatile method, elem.querySelectorAll(css) returns all elements inside elem matching the given CSS selector.
 
 Here we look for all <li> elements that are last children:
+
+<ul>
+  <li>The</li>
+  <li>test</li>
+</ul>
+<ul>
+  <li>has</li>
+  <li>passed</li>
+</ul>
+<script>
+  let elements = document.querySelectorAll('ul > li:last-child');
+
+for (let elem of elements) {
+alert(elem.innerHTML); // "test", "passed"
+}
+</script>
+
+querySelector
+
+The call to elem.querySelector(css) returns the first element for the given CSS selector.
+
+In other words, the result is the same as elem.querySelectorAll(css)[0], but the latter is looking for all elements and picking one, while elem.querySelector just looks for one. So it’s faster and also shorter to write.
+
+matches
+Previous methods were searching the DOM.
+
+The elem.matches(css) does not look for anything, it merely checks if elem matches the given CSS-selector. It returns true or false.
+
+The method comes in handy when we are iterating over elements (like in an array or something) and trying to filter out those that interest us.
+
+<a href="http://example.com/file.zip">...</a>
+<a href="http://ya.ru">...</a>
+
+<script>
+  // can be any collection instead of document.body.children
+  for (let elem of document.body.children) {
+    if (elem.matches('a[href$="zip"]')) {
+      alert("The archive reference: " + elem.href );
+    }
+  }
+</script>
+
+closest
+
+Ancestors of an element are: parent, the parent of parent, its parent and so on. The ancestors together form the chain of parents from the element to the top.
+
+The method elem.closest(css) looks for the nearest ancestor that matches the CSS-selector. The elem itself is also included in the search.
+
+In other words, the method closest goes up from the element and checks each of parents. If it matches the selector, then the search stops, and the ancestor is returned.
+
+<h1>Contents</h1>
+
+<div class="contents">
+  <ul class="book">
+    <li class="chapter">Chapter 1</li>
+    <li class="chapter">Chapter 2</li>
+  </ul>
+</div>
+
+<script>
+  let chapter = document.querySelector('.chapter'); // LI
+
+  alert(chapter.closest('.book')); // UL
+  alert(chapter.closest('.contents')); // DIV
+
+  alert(chapter.closest('h1')); // null (because h1 is not an ancestor)
+</script>
+
+getElementsBy\*
+There are also other methods to look for nodes by a tag, class, etc.
+
+Today, they are mostly history, as querySelector is more powerful and shorter to write.
+
+So here we cover them mainly for completeness, while you can still find them in the old scripts.
+
+elem.getElementsByTagName(tag) looks for elements with the given tag and returns the collection of them. The tag parameter can also be a star "\*" for “any tags”.
+elem.getElementsByClassName(className) returns elements that have the given CSS class.
+document.getElementsByName(name) returns elements with the given name attribute, document-wide. Very rarely used.
+
+<table id="table">
+  <tr>
+    <td>Your age:</td>
+
+    <td>
+      <label>
+        <input type="radio" name="age" value="young" checked> less than 18
+      </label>
+      <label>
+        <input type="radio" name="age" value="mature"> from 18 to 50
+      </label>
+      <label>
+        <input type="radio" name="age" value="senior"> more than 60
+      </label>
+    </td>
+
+  </tr>
+</table>
+
+<script>
+  let inputs = table.getElementsByTagName('input');
+
+  for (let input of inputs) {
+    alert( input.value + ': ' + input.checked );
+  }
+</script>
