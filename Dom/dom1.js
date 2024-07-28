@@ -16,5 +16,8 @@ function $var() {
 setInterval(() => (elem.hidden = elem.hidden === false), 2000);
 
 for (let node of document.body.childNodes) {
-  console.log(node,"here"); // shows all nodes from the collection
+  console.log(node, "here"); // shows all nodes from the collection
 }
+
+// let abc = table.rows[0].cells[1];
+// abc.style.backgroundColor = "purple";

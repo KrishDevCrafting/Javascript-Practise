@@ -146,3 +146,81 @@ Array methods won’t work, because it’s not an array:
 <script>
 alert(document.body.childNodes.filter); // undefined (there's no filter method)
 </script>
+<!-- 27/7/24 -->
+Siblings and the parent
+
+Siblings are nodes that are children of the same parent.
+
+For instance, here <head> and <body> are siblings
+
+Siblings are nodes that are children of the same parent.
+
+For instance, here <head> and <body> are siblings:
+
+<body> is said to be the “next” or “right” sibling of <head>,
+<head> is said to be the “previous” or “left” sibling of <body>.
+The next sibling is in nextSibling property, and the previous one – in previousSibling.
+
+The parent is available as parentNode.
+
+Element-only navigation
+Navigation properties listed above refer to all nodes. For instance, in childNodes we can see both text nodes, element nodes, and even comment nodes if they exist.
+
+But for many tasks we don’t want text or comment nodes. We want to manipulate element nodes that represent tags and form the structure of the page.
+
+So let’s see more navigation links that only take element nodes into account:
+
+The links are similar to those given above, just with Element word inside:
+
+children – only those children that are element nodes.
+firstElementChild, lastElementChild – first and last element children.
+previousElementSibling, nextElementSibling – neighbor elements.
+parentElement – parent element.
+
+Why parentElement? Can the parent be not an element?
+The parentElement property returns the “element” parent, while parentNode returns “any node” parent. These properties are usually the same: they both get the parent.
+
+
+
+More links: tables
+Till now we described the basic navigation properties.
+
+Certain types of DOM elements may provide additional properties, specific to their type, for convenience.
+
+Tables are a great example of that, and represent a particularly important case:
+
+The <table> element supports (in addition to the given above) these properties:
+
+table.rows – the collection of <tr> elements of the table.
+table.caption/tHead/tFoot – references to elements <caption>, <thead>, <tfoot>.
+table.tBodies – the collection of <tbody> elements (can be many according to the standard, but there will always be at least one – even if it is not in the source HTML, the browser will put it in the DOM).
+<thead>, <tfoot>, <tbody> elements provide the rows property:
+
+tbody.rows – the collection of <tr> inside.
+<tr>:
+
+tr.cells – the collection of <td> and <th> cells inside the given <tr>.
+tr.sectionRowIndex – the position (index) of the given <tr> inside the enclosing <thead>/<tbody>/<tfoot>.
+tr.rowIndex – the number of the <tr> in the table as a whole (including all table rows).
+<td> and <th>:
+
+td.cellIndex – the number of the cell inside the enclosing <tr>.
+An example of usage:
+
+<table id="table">
+  <tr>
+    <td>one</td><td>two</td>
+  </tr>
+  <tr>
+    <td>three</td><td>four</td>
+  </tr>
+</table>
+
+<script>
+  // get td with "two" (first row, second column)
+  let td = table.rows[0].cells[1];
+  td.style.backgroundColor = "red"; // highlight it
+</script>
+
+
+
