@@ -147,6 +147,7 @@ Array methods won’t work, because it’s not an array:
 alert(document.body.childNodes.filter); // undefined (there's no filter method)
 </script>
 <!-- 27/7/24 -->
+
 Siblings and the parent
 
 Siblings are nodes that are children of the same parent.
@@ -180,8 +181,6 @@ parentElement – parent element.
 Why parentElement? Can the parent be not an element?
 The parentElement property returns the “element” parent, while parentNode returns “any node” parent. These properties are usually the same: they both get the parent.
 
-
-
 More links: tables
 Till now we described the basic navigation properties.
 
@@ -194,14 +193,17 @@ The <table> element supports (in addition to the given above) these properties:
 table.rows – the collection of <tr> elements of the table.
 table.caption/tHead/tFoot – references to elements <caption>, <thead>, <tfoot>.
 table.tBodies – the collection of <tbody> elements (can be many according to the standard, but there will always be at least one – even if it is not in the source HTML, the browser will put it in the DOM).
+
 <thead>, <tfoot>, <tbody> elements provide the rows property:
 
 tbody.rows – the collection of <tr> inside.
+
 <tr>:
 
 tr.cells – the collection of <td> and <th> cells inside the given <tr>.
 tr.sectionRowIndex – the position (index) of the given <tr> inside the enclosing <thead>/<tbody>/<tfoot>.
 tr.rowIndex – the number of the <tr> in the table as a whole (including all table rows).
+
 <td> and <th>:
 
 td.cellIndex – the number of the cell inside the enclosing <tr>.
@@ -222,5 +224,18 @@ An example of usage:
   td.style.backgroundColor = "red"; // highlight it
 </script>
 
+<!-- 28/7/24 -->
 
+Searching: getElement*, querySelector*
+DOM navigation properties are great when elements are close to each other. What if they are not? How to get an arbitrary element of the page?
 
+There are additional searching methods for that.
+
+document.getElementById or just id
+If an element has the id attribute, we can get the element using the method document.getElementById(id), no matter where it is.
+
+querySelectorAll:
+
+By far, the most versatile method, elem.querySelectorAll(css) returns all elements inside elem matching the given CSS selector.
+
+Here we look for all <li> elements that are last children:
