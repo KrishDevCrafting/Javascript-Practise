@@ -307,7 +307,7 @@ In other words, the method closest goes up from the element and checks each of p
   alert(chapter.closest('h1')); // null (because h1 is not an ancestor)
 </script>
 
-getElementsBy\*
+getElementsBy
 There are also other methods to look for nodes by a tag, class, etc.
 
 Today, they are mostly history, as querySelector is more powerful and shorter to write.
