@@ -21,3 +21,17 @@ for (let node of document.body.childNodes) {
 
 // let abc = table.rows[0].cells[1];
 // abc.style.backgroundColor = "purple";
+
+// document.body.myData = {
+//   name: "Caesar",
+//   title: "Imperator",
+// };
+
+// alert(document.body.myData.title); // Imperator
+
+Element.prototype.sayHi = function() {
+  alert(`Hello, I'm ${this.tagName}`);
+};
+
+document.documentElement.sayHi(); // Hello, I'm HTML
+document.body.sayHi(); // Hello, I'm BODY

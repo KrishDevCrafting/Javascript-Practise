@@ -346,7 +346,7 @@ document.getElementsByName(name) returns elements with the given name attribute,
 </script>
 
 Live collections
-All methods "getElementsBy*" return a live collection. Such collections always reflect the current state of the document and “auto-update” when it changes.
+All methods "getElementsBy\*" return a live collection. Such collections always reflect the current state of the document and “auto-update” when it changes.
 
 In the example below, there are two scripts.
 
@@ -369,3 +369,41 @@ The second scripts runs after the browser meets one more <div>, so its length is
 In contrast, querySelectorAll returns a static collection. It’s like a fixed array of elements.
 
 If we use it instead, then both scripts output 1:
+
+<!-- 29/7/24 -->
+
+Attributes and properties
+
+When the browser loads the page, it “reads” (another word: “parses”) the HTML and generates DOM objects from it. For element nodes, most standard HTML attributes automatically become properties of DOM objects.
+
+For instance, if the tag is <body id="page">, then the DOM object has body.id="page".
+
+But the attribute-property mapping is not one-to-one! In this chapter we’ll pay attention to separate these two notions, to see how to work with them, when they are the same, and when they are different.
+
+DOM properties
+We’ve already seen built-in DOM properties. There are a lot. But technically no one limits us, and if there aren’t enough, we can add our own.
+
+DOM nodes are regular JavaScript objects. We can alter them.
+
+For instance, let’s create a new property in document.body:
+
+<script>
+document.body.myData = {
+  name: 'Caesar',
+  title: 'Imperator'
+};
+
+alert(document.body.myData.title); // Imperator
+</script>
+
+These methods operate exactly with what’s written in HTML.
+
+Also one can read all attributes using elem.attributes: a collection of objects that belong to a built-in Attr class, with name and value properties.
+
+Here’s a demo of reading a non-standard property:
+
+<body something="non-standard">
+  <script>
+    alert(document.body.getAttribute('something')); // non-standard
+  </script>
+</body>
