@@ -407,3 +407,22 @@ Here’s a demo of reading a non-standard property:
     alert(document.body.getAttribute('something')); // non-standard
   </script>
 </body>
+
+Property-attribute synchronization
+When a standard attribute changes, the corresponding property is auto-updated, and (with some exceptions) vice versa.
+
+In the example below id is modified as an attribute, and we can see the property changed too. And then the same backwards:
+
+<input>
+
+<script>
+  let input = document.querySelector('input');
+
+  // attribute => property
+  input.setAttribute('id', 'id');
+  alert(input.id); // id (updated)
+
+  // property => attribute
+  input.id = 'newId';
+  alert(input.getAttribute('id')); // newId (updated)
+</script>
