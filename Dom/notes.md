@@ -407,7 +407,7 @@ Here’s a demo of reading a non-standard property:
     alert(document.body.getAttribute('something')); // non-standard
   </script>
 </body>
-
+<!-- 30/7/24 -->
 Property-attribute synchronization
 When a standard attribute changes, the corresponding property is auto-updated, and (with some exceptions) vice versa.
 
@@ -425,4 +425,39 @@ In the example below id is modified as an attribute, and we can see the property
   // property => attribute
   input.id = 'newId';
   alert(input.getAttribute('id')); // newId (updated)
+</script>
+
+DOM properties are typed
+DOM properties are not always strings. For instance, the input.checked property (for checkboxes) is a boolean:
+<input id="input" type="checkbox" checked> checkbox
+
+<script>
+  alert(input.getAttribute('checked')); // the attribute value is: empty string
+  alert(input.checked); // the property value is: true
+</script>
+
+Non-standard attributes, dataset
+When writing HTML, we use a lot of standard attributes. But what about non-standard, custom ones? First, let’s see whether they are useful or not? What for?
+
+Sometimes non-standard attributes are used to pass custom data from HTML to JavaScript, or to “mark” HTML-elements for JavaScript.
+
+Like this:
+
+<!-- mark the div to show "name" here -->
+<div show-info="name"></div>
+<!-- and age here -->
+<div show-info="age"></div>
+
+<script>
+  // the code finds an element with the mark and shows what's requested
+  let user = {
+    name: "Pete",
+    age: 25
+  };
+
+  for(let div of document.querySelectorAll('[show-info]')) {
+    // insert the corresponding info into the field
+    let field = div.getAttribute('show-info');
+    div.innerHTML = user[field]; // first Pete into "name", then 25 into "age"
+  }
 </script>
