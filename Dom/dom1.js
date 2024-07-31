@@ -29,9 +29,15 @@ for (let node of document.body.childNodes) {
 
 // alert(document.body.myData.title); // Imperator
 
-Element.prototype.sayHi = function() {
-  alert(`Hello, I'm ${this.tagName}`);
-};
+// Element.prototype.sayHi = function () {
+//   alert(`Hello, I'm ${this.tagName}`);
+// };
 
-document.documentElement.sayHi(); // Hello, I'm HTML
-document.body.sayHi(); // Hello, I'm BODY
+// document.documentElement.sayHi(); // Hello, I'm HTML
+// document.body.sayHi(); // Hello, I'm BODY
+
+let div = document.createElement("div");
+
+div.innerHTML = "<h1>Hi there!</h1> You've read an important message.";
+
+document.body.append(div);

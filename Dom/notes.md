@@ -462,8 +462,23 @@ Like this:
   }
 </script>
 <!-- 31.7.24 -->
-Node properties: type, tag and contents
 
-Let’s get a more in-depth look at DOM nodes.
+Modifying the document
+DOM modification is the key to creating “live” pages.
 
-In this chapter we’ll see more into what they are and learn their most used properties.
+Here we’ll see how to create new elements “on the fly” and modify the existing page content.
+
+Creating an element
+To create DOM nodes, there are two methods:
+<script>
+document.createElement(tag)
+</script>
+Creates a new element node with the given tag:
+<script>
+let div = document.createElement('div');
+document.createTextNode(text)
+</script>
+Creates a new text node with the given text:
+<script>
+let textNode = document.createTextNode('Here I am');
+</script>
