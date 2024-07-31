@@ -461,3 +461,9 @@ Like this:
     div.innerHTML = user[field]; // first Pete into "name", then 25 into "age"
   }
 </script>
+
+Node properties: type, tag and contents
+
+Let’s get a more in-depth look at DOM nodes.
+
+In this chapter we’ll see more into what they are and learn their most used properties.
