@@ -470,15 +470,30 @@ Here we’ll see how to create new elements “on the fly” and modify the exis
 
 Creating an element
 To create DOM nodes, there are two methods:
+
 <script>
 document.createElement(tag)
 </script>
+
 Creates a new element node with the given tag:
+
 <script>
 let div = document.createElement('div');
 document.createTextNode(text)
 </script>
+
 Creates a new text node with the given text:
+
 <script>
 let textNode = document.createTextNode('Here I am');
 </script>
+
+Here we called append on document.body, but we can call append method on any other element, to put another element into it. For instance, we can append something to <div> by calling div.append(anotherElement).
+
+Here are more insertion methods, they specify different places where to insert:
+
+node.append(...nodes or strings) – append nodes or strings at the end of node,
+node.prepend(...nodes or strings) – insert nodes or strings at the beginning of node,
+node.before(...nodes or strings) –- insert nodes or strings before node,
+node.after(...nodes or strings) –- insert nodes or strings after node,
+node.replaceWith(...nodes or strings) –- replaces node with the given nodes or strings.
