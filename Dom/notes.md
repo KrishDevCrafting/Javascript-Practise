@@ -461,7 +461,7 @@ Like this:
     div.innerHTML = user[field]; // first Pete into "name", then 25 into "age"
   }
 </script>
-
+<!-- 31.7.24 -->
 Node properties: type, tag and contents
 
 Let’s get a more in-depth look at DOM nodes.
