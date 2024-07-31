@@ -38,6 +38,7 @@ for (let node of document.body.childNodes) {
 
 let div = document.createElement("div");
 
-div.innerHTML = "<h1>Hi there!</h1> You've read an important message.";
+div.innerHTML =
+  "<h1>Hi there!</h1> This text add by DOM which Document object Model.";
 
 document.body.append(div);
