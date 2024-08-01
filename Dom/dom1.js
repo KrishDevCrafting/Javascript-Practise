@@ -19,8 +19,8 @@ for (let node of document.body.childNodes) {
   console.log(node, "here"); // shows all nodes from the collection
 }
 
-// let abc = table.rows[0].cells[1];
-// abc.style.backgroundColor = "purple";
+let abc = table.rows[0].cells[1];
+abc.style.backgroundColor = "red";
 
 // document.body.myData = {
 //   name: "Caesar",
@@ -41,8 +41,8 @@ let div = document.createElement("div");
 div.innerHTML =
   "<h1>Hi there!</h1> This text add by DOM which Document object Model.";
 
-document.body.append(div);
-
+document.body.after(div);
+// another Line way :
 ol.before("before"); // insert string "before" before <ol>
 ol.after("after"); // insert string "after" after <ol>
 
@@ -53,3 +53,4 @@ ol.prepend(liFirst); // insert liFirst at the beginning of <ol>
 let liLast = document.createElement("li");
 liLast.innerHTML = "append";
 ol.append(liLast); // insert liLast at the end of <ol>
+// End another line
