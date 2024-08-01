@@ -41,7 +41,7 @@ let div = document.createElement("div");
 div.innerHTML =
   "<h1>Hi there!</h1> This text add by DOM which Document object Model.";
 
-document.body.after(div);
+document.body.prepend(div);
 // another Line way :
 ol.before("before"); // insert string "before" before <ol>
 ol.after("after"); // insert string "after" after <ol>
@@ -54,3 +54,7 @@ let liLast = document.createElement("li");
 liLast.innerHTML = "append";
 ol.append(liLast); // insert liLast at the end of <ol>
 // End another line
+
+
+div.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
+  div.insertAdjacentHTML('afterend', '<p>Bye</p>');

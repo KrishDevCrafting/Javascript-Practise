@@ -497,3 +497,50 @@ node.prepend(...nodes or strings) – insert nodes or strings at the beginning o
 node.before(...nodes or strings) –- insert nodes or strings before node,
 node.after(...nodes or strings) –- insert nodes or strings after node,
 node.replaceWith(...nodes or strings) –- replaces node with the given nodes or strings.
+
+<!-- 1.8.24 -->
+
+insertAdjacentHTML/Text/Element
+For that we can use another, pretty versatile method: elem.insertAdjacentHTML(where, html).
+
+The first parameter is a code word, specifying where to insert relative to elem. Must be one of the following:
+
+"beforebegin" – insert html immediately before elem,
+"afterbegin" – insert html into elem, at the beginning,
+"beforeend" – insert html into elem, at the end,
+"afterend" – insert html immediately after elem.
+
+<div id="div"></div>
+<script>
+  div.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
+  div.insertAdjacentHTML('afterend', '<p>Bye</p>');
+</script>
+Cloning nodes: cloneNode
+How to insert one more similar message?
+Sometimes when we have a big element, that may be faster and simpler.
+
+The call elem.cloneNode(true) creates a “deep” clone of the element – with all attributes and subelements. If we call elem.cloneNode(false), then the clone is made without child elements.
+DocumentFragment
+DocumentFragment is a special DOM node that serves as a wrapper to pass around lists of nodes.
+
+We can append other nodes to it, but when we insert it somewhere, then its content is inserted instead.
+
+For example, getListContent below generates a fragment with <li> items, that are later inserted into <ul>:
+
+<ul id="ul"></ul>
+
+<script>
+function getListContent() {
+  let fragment = new DocumentFragment();
+
+  for(let i=1; i<=3; i++) {
+    let li = document.createElement('li');
+    li.append(i);
+    fragment.append(li);
+  }
+
+  return fragment;
+}
+
+ul.append(getListContent()); // (*)
+</script>
