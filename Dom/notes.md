@@ -544,3 +544,33 @@ function getListContent() {
 
 ul.append(getListContent()); // (*)
 </script>
+
+<ol id="list">
+  <li>0</li>
+  <li>1</li>
+  <li>2</li>
+</ol>
+<!-- 2.8.24 -->
+<script>
+  let newLi = document.createElement('li');
+  newLi.innerHTML = 'Hello, world!';
+// output 
+// 1) 0
+// 2) 1
+// 3) 2
+// 4) 3"Hello-world!"
+
+list.appendChild(newLi);
+</script>
+
+<ol id="list">
+  <li>0</li>
+  <li>1</li>
+  <li>2</li>
+</ol>
+<script>
+  let newLi = document.createElement('li');
+  newLi.innerHTML = 'Hello, world!';
+
+list.insertBefore(newLi, list.children[1]);
+</script>
