@@ -55,6 +55,31 @@ liLast.innerHTML = "append";
 ol.append(liLast); // insert liLast at the end of <ol>
 // End another line
 
+div.insertAdjacentHTML("beforebegin", "<p>Hello</p>");
+div.insertAdjacentHTML("afterend", "<p>Bye</p>");
 
-div.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
-  div.insertAdjacentHTML('afterend', '<p>Bye</p>');
+// function getListContent() {
+//   let fragment = new DocumentFragment();
+
+//   for (let i = 1; i <= 3; i++) {
+//     let li = document.createElement("li");
+//     li.append(i);
+//     fragment.append(li);
+//   }
+
+//   return fragment;
+// }
+
+// ul.append(getListContent());
+
+function fn() {
+  let em = new DocumentFragment();
+  for (let i = 1; i <= 3; i++) {
+    let li = document.createElement("li");
+    li.append(i);
+    em.append(li);
+  }
+  return em;
+}
+
+ul.append(fn());
