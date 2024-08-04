@@ -574,3 +574,13 @@ list.appendChild(newLi);
 
 list.insertBefore(newLi, list.children[1]);
 </script>
+
+<!-- 4.8.24 -->
+Styles and classes
+JavaScript can modify both classes and style properties.
+
+We should always prefer CSS classes to style. The latter should only be used if classes “can’t handle it”.
+
+className and classList
+Changing a class is one of the most often used actions in scripts.
+So for classes the similar-looking property "className" was introduced: the elem.className corresponds to the "class" attribute
