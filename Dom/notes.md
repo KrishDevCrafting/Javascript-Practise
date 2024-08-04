@@ -576,6 +576,7 @@ list.insertBefore(newLi, list.children[1]);
 </script>
 
 <!-- 4.8.24 -->
+
 Styles and classes
 JavaScript can modify both classes and style properties.
 
@@ -583,4 +584,45 @@ We should always prefer CSS classes to style. The latter should only be used if 
 
 className and classList
 Changing a class is one of the most often used actions in scripts.
-So for classes the similar-looking property "className" was introduced: the elem.className corresponds to the "class" attribute
+So for classes the similar-looking property "className" was introduced: the elem.className corresponds to the "class" attribute.
+
+<body class="main page">
+  <script>
+    // add a class
+    document.body.classList.add('article');
+
+    alert(document.body.className); // main page article
+
+  </script>
+</body>
+Methods of classList:
+
+elem.classList.add/remove("class") – adds/removes the class.
+elem.classList.toggle("class") – adds the class if it doesn’t exist, otherwise removes it.
+elem.classList.contains("class") – checks for the given class, returns true/false.
+
+Element style
+The property elem.style is an object that corresponds to what’s written in the "style" attribute. Setting elem.style.width="100px" works the same as if we had in the attribute style a string width:100px.
+
+<script>document.body.style.backgroundColor = prompt('background color?', 'green');</script>
+
+Resetting the style property
+Sometimes we want to assign a style property, and later remove it.
+
+For instance, to hide an element, we can set elem.style.display = "none".
+
+Then later we may want to remove the style.display as if it were not set. Instead of delete elem.style.display we should assign an empty string to it: elem.style.display = "".
+
+// if we run this code, the <body>
+will blink
+
+<script>
+document.body.style.display = "none"; // hide
+
+setTimeout(() => document.body.style.display = "", 1000); // back to normal
+</script>
+
+Mind the units
+Don’t forget to add CSS units to values.
+
+For instance, we should not set elem.style.top to 10, but rather to 10px. Otherwise it wouldn’t work:
