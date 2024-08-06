@@ -622,7 +622,4 @@ document.body.style.display = "none"; // hide
 setTimeout(() => document.body.style.display = "", 1000); // back to normal
 </script>
 
-Mind the units
-Don’t forget to add CSS units to values.
-
-For instance, we should not set elem.style.top to 10, but rather to 10px. Otherwise it wouldn’t work:
+<!-- 6.8.24 -->
