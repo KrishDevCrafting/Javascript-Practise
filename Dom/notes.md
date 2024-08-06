@@ -623,3 +623,7 @@ setTimeout(() => document.body.style.display = "", 1000); // back to normal
 </script>
 
 <!-- 6.8.24 -->
+
+Element size and scrolling
+There are many JavaScript properties that allow us to read information about element width, height and other geometry features.
+
