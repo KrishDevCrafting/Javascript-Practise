@@ -5,7 +5,7 @@ const array = [1, 2, 2, 3, 3, 4, 4, 5, 5];
 
 const newArray = array.filter(fn);
 
-console.log(newArray);
+console.log(newArray, "new-array");
 
 function fn(value, index, self) {
   return self.indexOf(value) === index;
@@ -82,11 +82,8 @@ let Word = "krish";
 let Capitaliz = Word.toUpperCase();
 console.log(Capitaliz);
 
-
 // To find the index of in javascript
 const manipulate = "hello";
 
-const newManipulate = manipulate.indexOf("h"); 
-console.log("value",newManipulate);
-
-
+const newManipulate = manipulate.indexOf("h");
+console.log("value", newManipulate);

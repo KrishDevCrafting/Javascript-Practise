@@ -28,6 +28,12 @@ function fn(value) {
 
 console.log(fn("Anand sir!"));
 
+const a = ["krish", 2, 3];
+let array = a.pop();
+console.log(array);
+console.log(a);
+
+
 // Example usage:
 // const myString = "JavaScript";
 // const reversed = reverseString(myString);
