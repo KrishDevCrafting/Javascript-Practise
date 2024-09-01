@@ -4,11 +4,16 @@ function milton(n) {
     return console.log("not a Prime-number!");
   }
 
-  for (let i = 0; i < n; i++) {
-
-    
-  }
+  for (let i = 0; i < n; i++) {}
 }
+
+// Reverse the String
+
+function x(str) {
+  return str.split("").reverse().join("");
+}
+
+console.log(x("hello"));
 
 // function isPrime(n) {
 //   // Corner case
