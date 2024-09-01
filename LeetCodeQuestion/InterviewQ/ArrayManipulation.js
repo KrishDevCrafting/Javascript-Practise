@@ -1,7 +1,7 @@
 // Array Manipulation:
 
 // How would you remove duplicates from an array?
-const array = [1, 2, 2, 3, 3, 4, 4, 5, 5];
+const array1 = [1, 2, 2, 3, 3, 4, 4, 5, 5];
 
 const newArray = array.filter(fn);
 
@@ -10,6 +10,25 @@ console.log(newArray, "new-array");
 function fn(value, index, self) {
   return self.indexOf(value) === index;
 }
+
+const duplicateArray = [1, 2, 2, 3, 3, 4, 4, 5, 5];
+
+function removeDuplicates(arr) {
+  const uniqueElements = {};
+  const result = [];
+  for (const element of arr) {
+    if (!uniqueElements[element]) {
+      uniqueElements[element] = true;
+      result.push(element);
+    }
+  }
+  return result;
+}
+
+// Example usage:
+const array = [1, 2, 2, 3, 4, 4, 5];
+const uniqueArray = removeDuplicates(array);
+console.log(uniqueArray); // Output: [1, 2, 3, 4, 5]
 
 // let string = "hello World";
 
