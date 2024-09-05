@@ -50,17 +50,19 @@ console.log(checknumber(44));
 
 // Write a JavaScript function to print the numbers from 1 to 100. But for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
 
-const logicQ = () => {
-  for (let a = 1; a <= 100; a++) {
-    if (a % 3 == 0 && a % 5 == 0) {
-      console.log("FizzBuzz!");
-    } else if (a % 3 == 0) {
-      console.log("Fizz!");
-    } else if (a % 5 == 0) {
-      console.log("Buzz!");
+const logicQ = (n) => {
+  for (let a = 1; a <= n; a++) {
+    if (a % 3 === 0 && a % 5 === 0) {
+      console.log(a + "FizzBuzz!");
+    } else if (a % 3 === 0) {
+      console.log(a + "Fizz!");
+    } else if (a % 5 === 0) {
+      console.log(a + "Buzz!");
+    } else {
+      console.log(a);
     }
   }
 };
 
 const holdValue = logicQ;
-console.log(holdValue());
+console.log(holdValue(20));
