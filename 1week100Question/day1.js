@@ -1,6 +1,6 @@
 // started problem solving the question for logic buliding!
 // Question1 Write a JavaScript function to check if a number is prime.
-
+// Question (1)
 
 function isPrime(num) {
   // Handle special cases
@@ -20,7 +20,7 @@ function isPrime(num) {
 const hold = isPrime;
 
 console.log(hold());
-
+// Question (2)
 // Implement a JavaScript function to reverse a string.
 
 const reverseString = (value) => {
@@ -32,7 +32,7 @@ const reverseString = (value) => {
 };
 
 console.log(reverseString("Krish"));
-
+// Question (3)
 function checknumber(num) {
   if (num % 2 == 0) {
     return true;
@@ -42,7 +42,7 @@ function checknumber(num) {
 }
 
 console.log(checknumber(44));
-
+// Question(4)
 // Write a JavaScript function to print the numbers from 1 to 100. But for multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
 
 const logicQ = (n) => {
@@ -61,11 +61,69 @@ const logicQ = (n) => {
 
 const holdValue = logicQ;
 console.log(holdValue(20));
-
+// question (5)
 // Write a function to find the greatest common divisor (GCD) of two numbers in JavaScript.
 
-const GCD = (dv) => {
-  for (let b = 1; b <= dv; b++) {
-    if(b%dv)
+function gcd(a, b) {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
   }
-};
+  return a;
+}
+
+// Example usage:
+const num1 = 56;
+const num2 = 98;
+const result = gcd(num1, num2);
+console.log(`GCD of ${num1} and ${num2} is: ${result}`);
+// Question (6)
+// Write a JavaScript function to check if a string is a palindrome.\
+
+function isPalindrome(str) {
+  // Remove non-alphanumeric characters and convert to lowercase
+  const cleanStr = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+  // Compare the cleaned string with its reversed version
+  return cleanStr === cleanStr.split("").reverse().join("");
+}
+
+// Example usage:
+console.log(isPalindrome("A man, a plan, a canal, Panama")); // true
+console.log(isPalindrome("hello")); // false
+console.log(isPalindrome("madam")); // true
+// Question (7)
+// Implement a function to find the second largest number in an array using JavaScript.
+
+// Question (8)
+// Implement a function to find the second largest number in an array using JavaScript.
+function findSecondLargest(arr) {
+  // If the array has less than 2 elements, return null
+  if (arr.length < 2) {
+    return null;
+  }
+
+  // Initialize variables to hold the largest and second largest numbers
+  let largest = -Infinity;
+  let secondLargest = -Infinity;
+
+  for (let num of arr) {
+    if (num > largest) {
+      // If the current number is greater than the largest, update both
+      secondLargest = largest;
+      largest = num;
+    } else if (num > secondLargest && num !== largest) {
+      // If the current number is between the largest and second largest, update second largest
+      secondLargest = num;
+    }
+  }
+
+  // If secondLargest is still -Infinity, it means there's no valid second largest number
+  return secondLargest === -Infinity ? null : secondLargest;
+}
+
+// Example usage:
+console.log(findSecondLargest([3, 5, 7, 1, 6])); // 6
+console.log(findSecondLargest([10, 10, 9])); // 9
+console.log(findSecondLargest([4])); // null
