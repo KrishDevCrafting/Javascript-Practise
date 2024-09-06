@@ -132,14 +132,36 @@ console.log(findSecondLargest([4])); // null
 function areAnagrams(str1, str2) {
   // Helper function to clean and sort a string
   const cleanString = (str) =>
-      str.toLowerCase().replace(/[^a-z0-9]/g, '').split('').sort().join('');
+    str
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, "")
+      .split("")
+      .sort()
+      .join("");
 
   // Compare the cleaned and sorted versions of both strings
   return cleanString(str1) === cleanString(str2);
 }
 
 // Example usage:
-console.log(areAnagrams("listen", "silent"));   // true
-console.log(areAnagrams("hello", "world"));     // false
-console.log(areAnagrams("Astronomer", "Moon starer"));  // true
+console.log(areAnagrams("listen", "silent")); // true
+console.log(areAnagrams("hello", "world")); // false
+console.log(areAnagrams("Astronomer", "Moon starer")); // true
+// Question (10)
+//Write a function to generate the Fibonacci sequence up to n terms in JavaScript.
 
+function generateFibonacci(n) {
+  if (n <= 0) return [];
+
+  const fib = [0, 1]; // Initialize the first two Fibonacci numbers
+
+  for (let i = 2; i < n; i++) {
+    fib.push(fib[i - 1] + fib[i - 2]);
+  }
+
+  return fib.slice(0, n); // Return only up to n terms
+}
+
+// Example usage:
+console.log(generateFibonacci(5)); // [0, 1, 1, 2, 3]
+console.log(generateFibonacci(10)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
