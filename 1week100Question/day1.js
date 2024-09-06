@@ -127,3 +127,19 @@ function findSecondLargest(arr) {
 console.log(findSecondLargest([3, 5, 7, 1, 6])); // 6
 console.log(findSecondLargest([10, 10, 9])); // 9
 console.log(findSecondLargest([4])); // null
+// Question(9)
+// Function to Check if Two Strings Are Anagrams:
+function areAnagrams(str1, str2) {
+  // Helper function to clean and sort a string
+  const cleanString = (str) =>
+      str.toLowerCase().replace(/[^a-z0-9]/g, '').split('').sort().join('');
+
+  // Compare the cleaned and sorted versions of both strings
+  return cleanString(str1) === cleanString(str2);
+}
+
+// Example usage:
+console.log(areAnagrams("listen", "silent"));   // true
+console.log(areAnagrams("hello", "world"));     // false
+console.log(areAnagrams("Astronomer", "Moon starer"));  // true
+
