@@ -14,7 +14,7 @@ function isPrime(num) {
   for (let i = 5; i * i <= num; i += 6) {
     if (num % i === 0 || num % (i + 2) === 0) return false;
   }
-
+           
   return true; // num is a prime number
 }
 const hold = isPrime;
@@ -28,7 +28,8 @@ const reverseString = (value) => {
   for (let i = value.length - 1; i >= 0; i--) {
     empty += value[i];
   }
-  return empty;
+  return empty;3
+
 };
 
 console.log(reverseString("Krish"));
