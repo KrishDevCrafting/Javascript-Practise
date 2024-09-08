@@ -19,7 +19,7 @@ function isPrime(num) {
 }
 const hold = isPrime;
 
-console.log(hold());
+console.log(hold(2));
 // Question (2)
 // Implement a JavaScript function to reverse a string.
 
