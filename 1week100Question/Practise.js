@@ -11,3 +11,4 @@ function PrimeN(num) {
 
 console.log(PrimeN(2));
 
+// commit
