@@ -29,7 +29,6 @@ const reverseString = (value) => {
     empty += value[i];
   }
   return empty;
-  3;
 };
 
 console.log(reverseString("Krish"));

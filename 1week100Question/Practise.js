@@ -24,3 +24,14 @@ function FindPrime(value) {
 }
 
 console.log(FindPrime(2));
+const RSM = (str) => {
+  let emptyValue = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    emptyValue += str[i];
+  }
+  return emptyValue;
+};
+
+const Print = RSM;
+
+console.log(Print("KRISH"));
