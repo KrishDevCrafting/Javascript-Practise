@@ -14,7 +14,7 @@ function isPrime(num) {
   for (let i = 5; i * i <= num; i += 6) {
     if (num % i === 0 || num % (i + 2) === 0) return false;
   }
-           
+
   return true; // num is a prime number
 }
 const hold = isPrime;
@@ -28,8 +28,8 @@ const reverseString = (value) => {
   for (let i = value.length - 1; i >= 0; i--) {
     empty += value[i];
   }
-  return empty;3
-
+  return empty;
+  3;
 };
 
 console.log(reverseString("Krish"));
@@ -166,3 +166,8 @@ function generateFibonacci(n) {
 // Example usage:
 console.log(generateFibonacci(5)); // [0, 1, 1, 2, 3]
 console.log(generateFibonacci(10)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+// function car(speed) {
+//   if (speed <= 50) return console.log("Good");
+//   if (speed > 50) return console.log("bad");
+// }
+// car(55);
