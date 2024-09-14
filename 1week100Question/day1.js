@@ -170,3 +170,14 @@ console.log(generateFibonacci(10)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 //   if (speed > 50) return console.log("bad");
 // }
 // car(55);
+
+// Write a JavaScript function to reverse the order of elements in an array.
+function reverseArray(arr) {
+  let reversedArr = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    reversedArr.push(arr[i]);
+  }
+  return reversedArr;
+}
+
+console.log(reverseArray("RTX"));

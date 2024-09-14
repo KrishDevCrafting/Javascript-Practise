@@ -34,3 +34,20 @@ console.log(FindPrime(2));
 // };
 
 // console.log(reverseLoop("Suzune!"));
+
+// The Greatest Common Divisor (GCD), also known as the Highest Common Factor (HCF), of two numbers is the largest number that divides both of them without leaving a remainder. For example, the GCD of 20 and 28 is 4 because 4 is the largest number that can divide both 20 and 28 exactly.
+// Javascript program to find GCD of two numbers
+// Function to return gcd of a and b
+
+function Gcd(a, b) {
+  let result = Math.min(a, b);
+  while (result > 0) {
+    if (a % result == 0 && b % result == 0) {
+      break;
+    }
+    result--;
+  }
+  return result;
+}
+
+console.log(Gcd(98, 56));
