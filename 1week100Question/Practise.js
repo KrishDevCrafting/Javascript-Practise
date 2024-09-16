@@ -51,3 +51,24 @@ function Gcd(a, b) {
 }
 
 console.log(Gcd(98, 56));
+
+function reverseArray(arr) {
+  let variable = [];
+
+  for (let i = arr.length - 1; i >= 0; i--) {
+    variable.push(arr[i]);
+  }
+  return variable;
+}
+
+console.log(reverseArray("Kabira!"));
+
+function reverseString(str) {
+  let hold = "";
+  for (let v = str.length - 1; v >= 0; v--) {
+    hold += str[v];
+  }
+  return hold;
+}
+
+console.log(reverseString("Ranjha"));
