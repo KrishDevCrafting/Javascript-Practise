@@ -86,3 +86,13 @@ function generateFibonacci(n) {
 }
 
 console.log(generateFibonacci(10));
+
+function stringReverse(str) {
+  let holdTheVAlue = "";
+  for (let ab = str.length - 1; ab >= 0; ab--) {
+    holdTheVAlue += str[ab];
+  }
+  return holdTheVAlue;
+}
+
+console.log(stringReverse("hello,world"));
