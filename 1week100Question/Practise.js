@@ -106,3 +106,20 @@ c = c ^ d; // a becomes 10 (XOR of 15 and 5)
 
 console.log("a:", a); // 10
 console.log("b:", b); // 5
+
+// Write a function in JavaScript to find the factorial of a number using recursion
+function Factorial(n) {
+  if (n === 0 || n === 1) return 1;
+
+  return n * Factorial(n - 1);
+}
+
+console.log(Factorial(5));
+// What is a factorial?
+// The factorial of a number (denoted as n!) is the product of all positive integers less than or equal to n. In simpler terms, you multiply the number by every whole number that comes before it.
+
+// Examples:
+// 5!=5×4×3×2×1=120
+
+
+// Write a JavaScript function to check if a string is a palindrome.
