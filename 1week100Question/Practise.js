@@ -87,12 +87,22 @@ function generateFibonacci(n) {
 
 console.log(generateFibonacci(10));
 
-function stringReverse(str) {
-  let holdTheVAlue = "";
-  for (let ab = str.length - 1; ab >= 0; ab--) {
-    holdTheVAlue += str[ab];
-  }
-  return holdTheVAlue;
-}
+let a = 10;
+let b = 20;
 
-console.log(stringReverse("hello,world"));
+a = a + b;
+b = a - b;
+
+console.log("a:", a);
+console.log("b:", b);
+
+// Using Bitwise XOR:
+let c = 5;
+let d = 10;
+
+c = c ^ d; // a now becomes 15 (XOR of 5 and 10)
+d = c ^ d; // b becomes 5 (XOR of 15 and 10)
+c = c ^ d; // a becomes 10 (XOR of 15 and 5)
+
+console.log("a:", a); // 10
+console.log("b:", b); // 5
