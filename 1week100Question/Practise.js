@@ -1,3 +1,4 @@
+// Prime numbers are those natural numbers divisible by only 1 and the number itself.
 // function PrimeN(num) {
 //   if (num <= 1) return false;
 //   if (num <= 3) return true;
@@ -23,7 +24,9 @@ function FindPrime(value) {
   return true;
 }
 
-console.log(FindPrime(2));
+console.log(FindPrime(1));
+
+function findU() {}
 
 // const reverseLoop = (str) => {
 //   var Hold = "";
