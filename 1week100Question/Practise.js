@@ -60,7 +60,6 @@ function Gcd(ab, fn) {
   return ab;
 }
 
-
 console.log(Gcd(48, 18), "Code!");
 
 function reverseArray(arr) {
@@ -100,3 +99,16 @@ console.log(generateFibonacci(10));
 
 // hello
 // Repo checkga
+
+function SwapValue(a, b) {
+  console.log(`Before swap: a = ${a}, b = ${b}`);
+  [a, b] = [b, a];
+  console.log(`After swap: a = ${a}, b = ${b}`);
+  return [a, b];
+}
+
+let x = 5;
+let y = 10;
+
+[x, y] = SwapValue(x, y);
+console.log(`Swapped values: x = ${x}, y = ${y}`);
