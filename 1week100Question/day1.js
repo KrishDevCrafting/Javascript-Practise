@@ -205,3 +205,16 @@ function swapUsingArithmetic(a, b) {
   console.log(`After swap: a = ${a}, b = ${b}`);
   return [a, b]; // Return the swapped values
 }
+
+// Write a function that returns the sum of all elements in an array in JavaScript.
+function sumArrayUsingLoop(arr) {
+  let sum = 0; // Initialize sum to zero
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i]; // Add each element to the sum
+  }
+  return sum; // Return the total sum
+}
+
+// Example usage:
+const numbers = [1, 2, 3, 4, 5];
+console.log(`Sum of array elements: ${sumArrayUsingLoop(numbers)}`); // Output: 15

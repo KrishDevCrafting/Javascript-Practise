@@ -112,3 +112,16 @@ let y = 10;
 
 [x, y] = SwapValue(x, y);
 console.log(`Swapped values: x = ${x}, y = ${y}`);
+// Write a function that returns the sum of all elements in an array in JavaScript.
+function reverseArrayElement(arr) {
+  let additon = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    additon += arr[i];
+  }
+  return additon;
+}
+
+const output = reverseArrayElement([1, 2, 3, 4, 5]);
+
+console.log(output);
