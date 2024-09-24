@@ -26,7 +26,16 @@ function FindPrime(value) {
 
 console.log(FindPrime(1));
 
-function findU() {}
+function findU(value) {
+  if (value <= 1) return false;
+  if (value <= 3) return true;
+  if (value % 2 == 0 || value % 3 == 0) return false;
+
+  for (let i = 5; i * i <= value; i + 6) {
+    if (value % 1 == 0 || (value % i) + 2 === 0) return false;
+  }
+  return true;
+}
 
 // const reverseLoop = (str) => {
 //   var Hold = "";
@@ -42,18 +51,17 @@ function findU() {}
 // Javascript program to find GCD of two numbers
 // Function to return gcd of a and b
 
-function Gcd(a, b) {
-  let result = Math.min(a, b);
-  while (result > 0) {
-    if (a % result == 0 && b % result == 0) {
-      break;
-    }
-    result--;
+function Gcd(ab, fn) {
+  while (fn !== 0) {
+    let temp = fn;
+    fn = ab % fn;
+    ab = temp;
   }
-  return result;
+  return ab;
 }
 
-console.log(Gcd(98, 56));
+
+console.log(Gcd(48, 18), "Code!");
 
 function reverseArray(arr) {
   let variable = [];

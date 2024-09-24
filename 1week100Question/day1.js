@@ -181,3 +181,17 @@ function reverseArray(arr) {
 }
 
 console.log(reverseArray("RTX"));
+
+// Implement a function to swap two variables in JavaScript without using a temporary variable.
+function swapUsingDestructuring(a, b) {
+  console.log(`Before swap: a = ${a}, b = ${b}`);
+  [a, b] = [b, a]; // Swap values using destructuring
+  console.log(`After swap: a = ${a}, b = ${b}`);
+  return [a, b]; // Return the swapped values
+}
+
+// Example usage:
+let x = 5;
+let y = 10;
+[x, y] = swapUsingDestructuring(x, y); // Using array destructuring to update x and y
+console.log(`Swapped values: x = ${x}, y = ${y}`);
