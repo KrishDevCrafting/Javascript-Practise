@@ -195,3 +195,13 @@ let x = 5;
 let y = 10;
 [x, y] = swapUsingDestructuring(x, y); // Using array destructuring to update x and y
 console.log(`Swapped values: x = ${x}, y = ${y}`);
+
+// Method 1: Using Arithmetic Operations
+function swapUsingArithmetic(a, b) {
+  console.log(`Before swap: a = ${a}, b = ${b}`);
+  a = a + b; // Step 1: Add both variables
+  b = a - b; // Step 2: Subtract the new b from the sum to get the original a
+  a = a - b; // Step 3: Subtract the new b from the sum to get the original b
+  console.log(`After swap: a = ${a}, b = ${b}`);
+  return [a, b]; // Return the swapped values
+}
