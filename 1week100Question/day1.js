@@ -128,6 +128,7 @@ console.log(findSecondLargest([3, 5, 7, 1, 6])); // 6
 console.log(findSecondLargest([10, 10, 9])); // 9
 console.log(findSecondLargest([4])); // null
 // Question(9)
+// What does anagram mean? An anagram is a word or phrase formed by rearranging the letters in another word or phrase.
 // Function to Check if Two Strings Are Anagrams:
 function areAnagrams(str1, str2) {
   // Helper function to clean and sort a string

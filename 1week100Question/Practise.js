@@ -125,4 +125,6 @@ function reverseArrayElement(arr) {
 const output = reverseArrayElement([1, 2, 3, 4, 5]);
 
 console.log(output);
-13
+13;
+
+
