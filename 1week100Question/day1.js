@@ -219,3 +219,20 @@ function sumArrayUsingLoop(arr) {
 // Example usage:
 const numbers = [1, 2, 3, 4, 5];
 console.log(`Sum of array elements: ${sumArrayUsingLoop(numbers)}`); // Output: 15
+
+// How do you find the missing number in an array of integers from 1 to n?
+function findMissingNumber(arr, n) {
+  // Calculate expected sum of numbers from 1 to n
+  const expectedSum = (n * (n + 1)) / 2;
+  
+  // Calculate the actual sum of the elements in the array
+  const actualSum = arr.reduce((acc, num) => acc + num, 0);
+  
+  // The missing number is the difference between the expected sum and the actual sum
+  return expectedSum - actualSum;
+}
+
+// Example usage
+const arr = [1, 2, 4, 5, 6];  // Missing number is 3
+const n = 6;                  // We are expecting numbers from 1 to 6
+console.log(findMissingNumber(arr, n));  // Output: 3
