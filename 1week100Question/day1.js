@@ -236,6 +236,6 @@ function findMissingNumber(arr, n) {
 const arr = [1, 2, 4, 5, 6];  // Missing number is 3
 const n = 6;                  // We are expecting numbers from 1 to 6
 console.log(findMissingNumber(arr, n));  // Output: 3
-
-
+// mere behen hai mere right mai 
+//  usse jane do
 
