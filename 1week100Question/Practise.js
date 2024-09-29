@@ -124,3 +124,4 @@ function ART(strring) {
 
 console.log(ART([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 // How do you find the missing number in an array of integers from 1 to n?
+
