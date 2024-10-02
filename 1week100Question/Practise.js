@@ -125,3 +125,19 @@ function ART(strring) {
 console.log(ART([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 // How do you find the missing number in an array of integers from 1 to n?
 
+function isPrime(n) {
+  let flag = true;
+  for (let i = 2; i < n; i++) {
+    console.log(i);
+    if (n % i == 0) {
+      flag = false;
+      break;
+    }
+  }
+  return flag;
+}
+
+// 1 , 7
+// 2 -> 6 n%2
+
+console.log(isPrime(15));
