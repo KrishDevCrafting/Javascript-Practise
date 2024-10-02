@@ -123,6 +123,18 @@ function ART(strring) {
 }
 
 console.log(ART([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+const Rich = (para) => {
+  let holdValue = 0;
+
+  for (let ac = 1; ac < para.length; ac++) {
+    holdValue += para[ac];
+  }
+  return holdValue;
+};
+
+console.log(Rich([1, 2, 3, 4, 5, 6, "krish-kuntal"]));
+
 // How do you find the missing number in an array of integers from 1 to n?
 
 function isPrime(n) {
