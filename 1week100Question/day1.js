@@ -236,3 +236,19 @@ function findMissingNumber(arr, n) {
 const arr = [1, 2, 4, 5, 6]; // Missing number is 3
 const n = 6; // We are expecting numbers from 1 to 6
 console.log(findMissingNumber(arr, n)); // Output: 3
+
+// Write a JavaScript function to find the missing number in an array of integers from 1 to n.
+
+function MissingNumber(n) {
+  const output = [];
+  const max = Math.max(...n);
+  for (let mn = 0; mn <= max; mn++) {
+    if (!n.includes(mn)) {
+      output.push(mn);
+    }
+  }
+
+  return output;
+}
+
+console.log(MissingNumber([1, 2, 4, 5, 6, 8, 9, 10, 11, 13, 15]));
