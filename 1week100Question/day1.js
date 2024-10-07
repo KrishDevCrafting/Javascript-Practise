@@ -264,6 +264,7 @@ function mostFrequentElement(arr) {
   // Step 1: Count the frequency of each element
   for (let i = 0; i < arr.length; i++) {
     const elem = arr[i];
+
     // If the element is not yet in the object, set its count to 1, otherwise increase it
     if (frequencyMap[elem]) {
       frequencyMap[elem]++;
@@ -276,6 +277,7 @@ function mostFrequentElement(arr) {
       maxCount = frequencyMap[elem];
       mostFrequent = elem;
     }
+    console.log(elem);
   }
 
   return mostFrequent;

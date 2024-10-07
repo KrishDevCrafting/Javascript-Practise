@@ -153,3 +153,30 @@ function isPrime(n) {
 // 2 -> 6 n%2
 
 console.log(isPrime(15));
+// Implement an algorithm to find the most frequent element in an array.
+
+function findElement(remainder) {
+  const obj = {};
+  var maxCount = 0;
+  var frequency = null;
+
+  for (let i = 0; i < remainder.length; i++) {
+    const elem = remainder[i];
+
+    if (obj[elem]) {
+      obj[elem]++;
+    } else {
+      obj[elem] = 1;
+    }
+
+    if (obj[elem] > maxCount) {
+      maxCount = obj[elem];
+      frequency = elem;
+    }
+  }
+
+  return frequency;
+}
+
+const printValue = findElement([1, 2, 3, 4, 5, 5, 6, 7, 7, 8]);
+console.log(printValue);
