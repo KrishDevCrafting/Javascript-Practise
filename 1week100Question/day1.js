@@ -253,3 +253,34 @@ function findA(number) {
 }
 
 console.log(findA([1, 2, 3, 4, 6, 7, 10]));
+
+// Implement an algorithm to find the most frequent element in an array.
+
+function mostFrequentElement(arr) {
+  const frequencyMap = {};
+  let maxCount = 0;
+  let mostFrequent = null;
+
+  // Step 1: Count the frequency of each element
+  for (let i = 0; i < arr.length; i++) {
+    const elem = arr[i];
+    // If the element is not yet in the object, set its count to 1, otherwise increase it
+    if (frequencyMap[elem]) {
+      frequencyMap[elem]++;
+    } else {
+      frequencyMap[elem] = 1;
+    }
+
+    // Step 2: Keep track of the most frequent element
+    if (frequencyMap[elem] > maxCount) {
+      maxCount = frequencyMap[elem];
+      mostFrequent = elem;
+    }
+  }
+
+  return mostFrequent;
+}
+
+// Example usage
+const repeatNumber = [1, 3, 2, 1, 4, 1, 2, 3, 3, 3];
+console.log(mostFrequentElement(repeatNumber)); // Output: 3
