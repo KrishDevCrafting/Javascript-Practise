@@ -239,16 +239,17 @@ console.log(findMissingNumber(arr, n)); // Output: 3
 
 // Write a JavaScript function to find the missing number in an array of integers from 1 to n.
 
-function MissingNumber(n) {
-  const output = [];
-  const max = Math.max(...n);
-  for (let mn = 0; mn <= max; mn++) {
-    if (!n.includes(mn)) {
-      output.push(mn);
+function findA(number) {
+  const valueNumber = [];
+
+  const maxN = Math.max(...number);
+
+  for (let mn = 1; mn <= maxN; mn++) {
+    if (!number.includes(mn)) {
+      valueNumber.push(mn);
     }
   }
-
-  return output;
+  return valueNumber;
 }
 
-console.log(MissingNumber([1, 2, 4, 5, 6, 8, 9, 10, 11, 13, 15]));
+console.log(findA([1, 2, 3, 4, 6, 7, 10]));
