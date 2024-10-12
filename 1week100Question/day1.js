@@ -286,3 +286,42 @@ function mostFrequentElement(arr) {
 // Example usage
 const repeatNumber = [1, 3, 2, 1, 4, 1, 2, 3, 3, 3];
 console.log(mostFrequentElement(repeatNumber)); // Output: 3
+
+// Write a function in JavaScript to merge two sorted arrays.
+// Sorting an array means arranging the elements of the array in a certain order.
+function mergeSortedArrays(arr1, arr2) {
+  let mergedArray = [];
+  let i = 0; // pointer for arr1
+  let j = 0; // pointer for arr2
+
+  // Traverse both arrays and compare elements
+  while (i < arr1.length && j < arr2.length) {
+    if (arr1[i] < arr2[j]) {
+      mergedArray.push(arr1[i]);
+      i++; // Move pointer for arr1
+    } else {
+      mergedArray.push(arr2[j]);
+      j++; // Move pointer for arr2
+    }
+  }
+
+  // If there are remaining elements in arr1, add them to mergedArray
+  while (i < arr1.length) {
+    mergedArray.push(arr1[i]);
+    i++;
+  }
+
+  // If there are remaining elements in arr2, add them to mergedArray
+  while (j < arr2.length) {
+    mergedArray.push(arr2[j]);
+    j++;
+  }
+
+  return mergedArray;
+}
+
+// Example usage:
+let array1 = [1, 3, 5, 7];
+let array2 = [2, 4, 6, 8];
+let result2 = mergeSortedArrays(array1, array2);
+console.log(result2); // Output: [1, 2, 3, 4, 5, 6, 7, 8]
