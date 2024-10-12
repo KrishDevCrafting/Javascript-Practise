@@ -290,7 +290,7 @@ console.log(mostFrequentElement(repeatNumber)); // Output: 3
 // Write a function in JavaScript to merge two sorted arrays.
 // Sorting an array means arranging the elements of the array in a certain order.
 function mergeSortedArrays(arr1, arr2) {
-  let mergedArray = [];
+  let mergedArray = [];                           
   let i = 0; // pointer for arr1
   let j = 0; // pointer for arr2
 
