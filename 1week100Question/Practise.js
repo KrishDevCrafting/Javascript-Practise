@@ -180,3 +180,40 @@ function findElement(remainder) {
 
 const printValue = findElement([1, 2, 3, 4, 5, 5, 6, 7, 7, 8]);
 console.log(printValue);
+
+// Abili
+
+const SweetHeart = (kiss, floor) => {
+  let fuckingChaseMe = [];
+  let Give = 0;
+  let heart = 0;
+
+  while (Give < kiss.length && heart < floor.length) {
+    if (kiss[Give] < floor[heart]) {
+      fuckingChaseMe.push(kiss[Give]);
+      Give++;
+    } else {
+      fuckingChaseMe.push(floor[heart]);
+      floor++;
+    }
+  }
+
+  while (Give < kiss.length) {
+    fuckingChaseMe.push(kiss[Give]);
+    Give++;
+  }
+
+  while (heart < floor.length) {
+    fuckingChaseMe.push(floor[heart]);
+    heart++;
+  }
+
+  return fuckingChaseMe;
+};
+
+let kiss = [1, 2, 3];
+let floor = [4, 5, 6];
+
+let print20 = SweetHeart(kiss, floor);
+
+console.log(print20);
