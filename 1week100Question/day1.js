@@ -292,6 +292,7 @@ console.log(mostFrequentElement(repeatNumber)); // Output: 3
 function mergeSortedArrays(arr1, arr2) {
   let mergedArray = [];                           
   let i = 0; // pointer for arr1
+  
   let j = 0; // pointer for arr2
 
   // Traverse both arrays and compare elements
