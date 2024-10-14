@@ -148,7 +148,7 @@ function isPrime(n) {
   }
   return flag;
 }
-
+ 
 // 1 , 7
 // 2 -> 6 n%2
 
