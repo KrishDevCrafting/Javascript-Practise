@@ -148,7 +148,7 @@ function isPrime(n) {
   }
   return flag;
 }
- 
+
 // 1 , 7
 // 2 -> 6 n%2
 
@@ -217,3 +217,5 @@ let floor = [4, 5, 6];
 let print20 = SweetHeart(kiss, floor);
 
 console.log(print20);
+
+// Work or not
