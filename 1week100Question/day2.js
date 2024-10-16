@@ -28,3 +28,19 @@ function ReverseString(str) {
 const print = ReverseString("I told you never..!");
 
 console.log(print);
+
+// Question of multiple of 5\
+
+function multiples(n) {
+  for (let ab = 1; ab <= n; ab++) {
+
+if(ab % 3 ===0 && ab % 5 ===0){
+  
+}
+
+
+
+
+
+  }
+}
