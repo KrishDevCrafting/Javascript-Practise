@@ -181,7 +181,6 @@ function findElement(remainder) {
 const printValue = findElement([1, 2, 3, 4, 5, 5, 6, 7, 7, 8]);
 console.log(printValue);
 
-// Abili
 
 const SweetHeart = (kiss, floor) => {
   let fuckingChaseMe = [];
