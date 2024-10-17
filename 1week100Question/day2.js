@@ -33,14 +33,16 @@ console.log(print);
 
 function multiples(n) {
   for (let ab = 1; ab <= n; ab++) {
-
-if(ab % 3 ===0 && ab % 5 ===0){
-  
-}
-
-
-
-
-
+    if (ab % 3 === 0 && ab % 5 === 0) {
+      return console.log("fizzbuzz!");
+    } else if (ab % 3 === 0) {
+      console.log(ab + "fizz!");
+    } else if (ab % 5 === 0) {
+      console.log(ab + "buzz");
+    } else {
+      console.log(ab);
+    }
   }
 }
+
+multiples(20);
