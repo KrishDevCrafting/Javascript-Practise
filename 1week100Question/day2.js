@@ -46,7 +46,7 @@ function multiples(n) {
 }
 
 multiples(20);
-
+// Onlyfore review Code.. 
 // GCD vali
 // let ac = 10;
 // while (ac > 0) {
