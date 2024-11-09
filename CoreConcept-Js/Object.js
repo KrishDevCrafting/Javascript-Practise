@@ -13,7 +13,8 @@ let lassi = {
   Protein: "1.9g",
   Totalfat: "1.8g",
   Saturatedfat: "1.3g",
-
+  fat: "20g",
+  
   addedSuger: "11g",
 };
 
