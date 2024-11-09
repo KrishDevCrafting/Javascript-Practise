@@ -8,6 +8,8 @@ const A = function () {
   return 100;
 };
 
+
+
 const B = function () {
   return 200;
 };
