@@ -17,3 +17,9 @@ const addTask = () => {
     taskI.value = "";
   }
 };
+
+function addItem() {
+  let textValue = "Hello-dear!";
+
+  alert(textValue);
+}
