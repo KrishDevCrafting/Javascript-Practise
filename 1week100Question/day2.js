@@ -53,4 +53,3 @@ multiples(20);
 //   ac--;
 //   console.log(ac, "hehehe");
 // }
-
