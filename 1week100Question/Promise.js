@@ -3,39 +3,6 @@
 // course selection.
 // enroll in the class.
 
-// function connectedToDiceserver() {
-//   console.log("Connecting to the server....!");
-//   setTimeout(() => {
-//     console.log("conected");
-//   }, 2000);
-// }
-
-// function Login() {
-//   console.log("Login to the server!");
-//   setTimeout(() => {
-//     console.log("Student-login-Completed!");
-//   }, 2000);
-// }
-
-// function selection(ab) {
-//   setInterval(() => {
-//     console.log("Course-selected Completed!");
-//   }, 2000);
-//   return ab;
-// }
-
-// function enroll() {
-//   setTimeout(() => {
-//     console.log("Class started!");
-//   }, 2000);
-// }
-
-// connectedToDiceserver(() => {
-//   Login(() => { 
-//     enroll(selection());
-//   });
-// });
-
 // function connectedToDiceserver(next) {
 //   console.log("Connecting to the server....!");
 //   setTimeout(() => {
@@ -115,3 +82,52 @@ navigate(() => {
     });
   });
 });
+
+// Code Using Promises
+
+function connectedToDiceserver() {
+  return new Promise((resolve) => {
+    console.log("Connecting to the server....!");
+    setTimeout(() => {
+      console.log("Connected");
+      resolve(); // Resolve the promise when done
+    }, 2000);
+  });
+}
+
+function Login() {
+  return new Promise((resolve) => {
+    console.log("Logging in to the server!");
+    setTimeout(() => {
+      console.log("Student-login-Completed!");
+      resolve(); // Resolve the promise when done
+    }, 2000);
+  });
+}
+
+function selection() {
+  return new Promise((resolve) => {
+    console.log("Course selection in progress...");
+    setTimeout(() => {
+      console.log("Course selection Completed!");
+      resolve(); // Resolve the promise when done
+    }, 2000);
+  });
+}
+
+function enroll() {
+  return new Promise((resolve) => {
+    console.log("Enrolling in class...");
+    setTimeout(() => {
+      console.log("Class started!");
+      resolve(); // Resolve the promise when done
+    }, 2000);
+  });
+}
+
+// Sequential Execution Using Promises
+connectedToDiceserver()
+  .then(() => Login())
+  .then(() => selection())
+  .then(() => enroll())
+  .catch((error) => console.error("An error occurred:", error));
