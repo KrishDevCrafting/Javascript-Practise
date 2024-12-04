@@ -132,3 +132,7 @@ connectedToDiceserver()
   .then(() => enroll())
   .catch((error) => console.error("An error occurred:", error));
 // commited 2.0
+
+let number = 12344545;
+
+console.log(number);
