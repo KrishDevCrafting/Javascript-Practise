@@ -8,13 +8,13 @@ function ReverseArry(str) {
 
 console.log(ReverseArry("krish"));
 
-function hello(fn) {
-  let arrayValue = [];
-  for (let ab = fn.length - 1; ab >= 0; ab--) {
-    arrayValue += fn[ab];
-  }
+function loopReverse(b) {
+  let emptyVariable = [];
 
-  return arrayValue;
+  for (let a = b.length - 1; a >= 0; a--) {
+    emptyVariable += b[a];
+  }
+  return emptyVariable;
 }
 
-console.log(hello("Hello-world!"));
+console.log(loopReverse("BMW M5 Serires!"));
