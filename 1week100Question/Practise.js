@@ -14,6 +14,7 @@
 
 // commit
 // Commit just view the code 
+// commit -m
 function FindPrime(value) {
   if (value <= 1) return false;
   if (value <= 3) return true;
