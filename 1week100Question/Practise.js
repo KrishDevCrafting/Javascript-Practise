@@ -13,8 +13,7 @@
 // console.log(PrimeN(2));
 
 // commit
-// Commit just view the code 
-// commit -m
+
 function FindPrime(value) {
   if (value <= 1) return false;
   if (value <= 3) return true;
@@ -136,6 +135,17 @@ const Rich = (para) => {
 
 console.log(Rich([1, 2, 3, 4, 5, 6, "krish-kuntal"]));
 
+function callAddArray(bf) {
+  let addValue = 0;
+  for (let gf = 1; gf < bf.length; gf++) {
+    addValue += bf[gf];
+  }
+
+  return addValue;
+}
+
+console.log(callAddArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Add-Array!"]));
+
 // How do you find the missing number in an array of integers from 1 to n?
 
 function isPrime(n) {
@@ -181,7 +191,6 @@ function findElement(remainder) {
 
 const printValue = findElement([1, 2, 3, 4, 5, 5, 6, 7, 7, 8]);
 console.log(printValue);
-
 
 const SweetHeart = (kiss, floor) => {
   let fuckingChaseMe = [];
