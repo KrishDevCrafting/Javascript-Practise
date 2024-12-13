@@ -228,3 +228,8 @@ let print20 = SweetHeart(kiss, floor);
 console.log(print20);
 
 // Work or not
+
+var compare = 45;
+let compare2 = 44;
+
+console.log(compare > compare2);
