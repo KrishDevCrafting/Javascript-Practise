@@ -13,3 +13,15 @@ function CheckPrime(ab) {
 }
 
 console.log(CheckPrime(2));
+
+//
+
+function anything() {
+   (function () {
+    console.log("Hello-anonymous-function!");
+  });
+  console.log("Hello-world");
+}
+
+const hm = anything();
+console.log(hm);
