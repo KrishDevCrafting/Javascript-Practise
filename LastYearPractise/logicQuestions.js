@@ -17,7 +17,7 @@ console.log(CheckPrime(2));
 //
 
 function anything() {
-   (function () {
+  (function () {
     console.log("Hello-anonymous-function!");
   });
   console.log("Hello-world");
@@ -26,3 +26,14 @@ function anything() {
 const hm = anything();
 console.log(hm);
 // commit
+
+const reverseloop = (str) => {
+  var variable = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    variable += str[i];
+  }
+
+  return str;
+};
+
+console.log(reverseloop("Laila or majnu"));
