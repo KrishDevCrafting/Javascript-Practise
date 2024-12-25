@@ -38,12 +38,18 @@ const reverseloop = (str) => {
 
 console.log(reverseloop("Laila or majnu"));
 
-
-
-
-function (params) {
-  
+function fizzBuzz(nb) {
+  for (let a = 1; a <= nb; a++) {
+    if (a % 3 === 0 && a % 5 === 0) {
+      console.log(a + "FizzBuzz!");
+    } else if (a % 3 === 0) {
+      console.log(a + "fizz!");
+    } else if (a % 5 === 0) {
+      console.log(a + "buzz!");
+    } else {
+      console.log(a);
+    }
+  }
 }
 
-
-
+fizzBuzz(10);
