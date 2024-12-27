@@ -54,4 +54,13 @@ function fizzBuzz(nb) {
 
 fizzBuzz(10);
 
-// commit -m "heheh"
+// commit -m "heheh
+//
+// find the largest number in the 3
+function largestNumber(nb) {
+  for (let i = 0; i < nb; i++) {
+    console.log(i,"Loop");
+  }
+}
+
+largestNumber(5)
