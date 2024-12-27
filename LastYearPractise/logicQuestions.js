@@ -57,10 +57,14 @@ fizzBuzz(10);
 // commit -m "heheh
 //
 // find the largest number in the 3
-function largestNumber(nb) {
-  for (let i = 0; i < nb; i++) {
-    console.log(i,"Loop");
-  }
-}
+function largestNumber(nb1, nb2, nb3) {
+  let largest = nb1;
 
-largestNumber(5)
+  if (nb2 > largest) largest = nb2;
+
+  if (nb3 > largest) largest = nb3;
+
+  return largest;
+}
+console.log(largestNumber(10,20,30));
+
