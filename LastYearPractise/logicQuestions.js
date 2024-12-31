@@ -68,7 +68,7 @@ function largestNumber(nb1, nb2, nb3) {
 }
 console.log(largestNumber(10, 20, 30));
 
-let deadline = new Date("dec 31, 2024 13:37:25").getTime();
+let deadline = new Date("jan 1, 2025 13:37:25").getTime();
 
 // To call defined fuction every second
 let x = setInterval(function () {
