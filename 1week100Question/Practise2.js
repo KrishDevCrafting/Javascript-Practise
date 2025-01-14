@@ -60,3 +60,6 @@ console.log(findLargestNumber([])); // Output: null
 
 
 //hello world!
+
+
+// Problem: Find the Smallest Number in an Array
