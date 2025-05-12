@@ -18,14 +18,13 @@ Yu//server connection with server.
 //     next(); // Call the next function
 //   }, 2000);
 // }
-
-// function selection(next) {
-//   console.log("Course selection in progress...");
-//   setTimeout(() => {
-//     console.log("Course selection Completed!");
-//     next(); // Call the next function
-//   }, 2000);
-// }
+ function selection(next) {
+   console.log("Course selection in progress...");
+  setTimeout(() => {
+    console.log("Course selection Completed!");
+     next(); // Call the next function
+ }, 2000);
+}
 
 // function enroll() {
 //   console.log("Enrolling in class...");
