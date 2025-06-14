@@ -5,4 +5,4 @@ function filterList(arr) {
 
 console.log(filterList([1, 2, "a", "b"])); // ➞ [1, 2]
 console.log(filterList([1, "a", "b", 0, 15])); // ➞ [1, 0, 15]
-console.log(filterList(["x", 23, "y", 42])); // ➞ [23, 42]
+console.log(filterList(["x", 23, "y", 42])); 
