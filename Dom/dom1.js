@@ -2,6 +2,19 @@ function $var() {
   return (document.getElementById("box").textContent = "hello,world");
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let text = document.body.firstChild;
 // alert(text.data); //Riya
 
@@ -39,7 +52,7 @@ abc.style.backgroundColor = "red";
 let div = document.createElement("div");
 
 div.innerHTML =
-  "<h1>Hi there!</h1> This text add by DOM which Document object Model.";
+  "<h1>Hi there!</h1> This text add by DOM which Document object BMW.";
 
 document.body.prepend(div);
 // another Line way :
