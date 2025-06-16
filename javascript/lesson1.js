@@ -25,3 +25,8 @@ console.log(getsum(1, 2)); // ➞ 3 (1 + 2)
 console.log(getsum(0, 1)); // ➞ 1 (0 + 1)
 console.log(getsum(1, 1)); // ➞ 1
 console.log(getsum(-1, 2)); // ➞ 2 (-1 + 0 + 1 + 2)
+
+// ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
+// If the function is passed a valid PIN string, return true, else return false.
+
+
