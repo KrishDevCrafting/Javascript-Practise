@@ -52,12 +52,22 @@ function validatePIN(pin) {
 // Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples:
 
 function likes(names) {
-  let names = [];
-
-
-  
+  let sum = names.length;
+  if (sum === 0) {
+    return "no one know your true value!";
+  } else if (sum === 1) {
+    return `${names[0]} likes this`;
+  } else if (sum === 2) {
+    return `${names[0]} and ${names[1]}  likes this`;
+  } else if (sum === 3) {
+    return `${names[0]}, ${names[1]} and ${names[2]}  likes this`;
+  } else {
+    return `${names[0]}, ${names[1]} and ${sum - 2} other likes this`;
+  }
 }
 
-for (let i = 0; i <= 5; i++) {
-  console.log(i, "simple-loop!");
-}
+console.log(likes([])); // "no one likes this"
+console.log(likes(["Krish"])); // "Krish likes this"
+console.log(likes(["Krish", "Vaishali"])); // "Krish and Vaishali like this"
+console.log(likes(["Krish", "Vaishali", "Ravi"])); // "Krish, Vaishali and Ravi like this"
+console.log(likes(["Krish", "Vaishali", "Ravi", "Sita"])); // "Krish, Vaishali and 2 others like this"
